@@ -1,11 +1,9 @@
 <template>
-
-
   <header class="hidden sm:inline">
     <nav class="mainNav hidden sm:inline">
       <ul>
         <li><NuxtLink to="/">Forside</NuxtLink></li>
-        <li><NuxtLink to="/Service">Menukort</NuxtLink></li>
+        <li><NuxtLink to="/Menukort">Menukort</NuxtLink></li>
         <li><NuxtLink to="/Skoleservice">Take Away</NuxtLink></li>
         <span class="logo-bg"
           ><img class="logo" src="../assets/img/renderLogo.jpg" alt=""
@@ -18,8 +16,6 @@
     <nav class="phoneNav"></nav>
   </header>
   <phone-nav />
-
-  
 </template>
 
 <style scoped>

@@ -1,4 +1,6 @@
 <template>
+
+
   <header class="hidden sm:inline">
     <nav class="mainNav hidden sm:inline">
       <ul>
@@ -16,6 +18,8 @@
     <nav class="phoneNav"></nav>
   </header>
   <phone-nav />
+
+  
 </template>
 
 <style scoped>

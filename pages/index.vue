@@ -1,10 +1,15 @@
 <template>
-  <h1>fds</h1>
+<main>
+<ForsideHero />
+</main>
 </template>
 
 <script>
-export default {};
+export default {
+
+}
 </script>
 
 <style>
+
 </style>

@@ -33,15 +33,27 @@
         <MenukortHovedretterBørn />
       </div>
       <div v-show="currentTab === 'Fisk'">
-        <h2 class="text-2xl">Til alle vores kødretter og fiskeretter kan de frit vælge mellem: <br> Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.</h2>
+        <h2 class="text-2xl">
+          Til alle vores kødretter og fiskeretter kan de frit vælge mellem:
+          <br />
+          Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.
+        </h2>
         <MenukortHovedretterFisk />
       </div>
       <div v-show="currentTab === 'Grillet Kød'">
-        <h2 class="text-2xl">Til alle vores kødretter og fiskeretter kan de frit vælge mellem: <br> Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.</h2>
+        <h2 class="text-2xl">
+          Til alle vores kødretter og fiskeretter kan de frit vælge mellem:
+          <br />
+          Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.
+        </h2>
         <MenukortHovedretterGrillet />
       </div>
       <div v-show="currentTab === 'Oksemørbrad'">
-        <h2 class="text-2xl">Til alle vores kødretter og fiskeretter kan de frit vælge mellem: <br> Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.</h2>
+        <h2 class="text-2xl">
+          Til alle vores kødretter og fiskeretter kan de frit vælge mellem:
+          <br />
+          Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.
+        </h2>
         <MenukortHovedretterOksemørbrad />
       </div>
       <div v-show="currentTab === 'Pasta'">

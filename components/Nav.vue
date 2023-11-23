@@ -4,11 +4,11 @@
       <ul>
         <li><NuxtLink to="/">Forside</NuxtLink></li>
         <li><NuxtLink to="/Menukort">Menukort</NuxtLink></li>
-        <li><NuxtLink to="/Skoleservice">Take Away</NuxtLink></li>
+        <li><NuxtLink to="/Takeaway">Take Away</NuxtLink></li>
         <span class="logo-bg"
           ><img class="logo" src="../assets/img/renderLogo.jpg" alt=""
         /></span>
-        <li><NuxtLink to="/projekter"> Galleri</NuxtLink></li>
+        <li><NuxtLink to="/galleri"> Galleri</NuxtLink></li>
         <li><NuxtLink to="/kontakt">Kontakt Os</NuxtLink></li>
         <li><NuxtLink to="/omos"> Om os</NuxtLink></li>
       </ul>

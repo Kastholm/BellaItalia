@@ -1,6 +1,6 @@
 <template>
   <Nav />
-  <main>
+  <main class="pt-32">
     <slot />
   </main>
   <Footer />

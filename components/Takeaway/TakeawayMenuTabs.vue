@@ -1,15 +1,5 @@
 <template>
   <div class="container mx-auto px-4 mt-20">
-    <!-- Tab Headers -->
-    <div class="text-center mb-10">
-      <div
-        class="text-2xl font-semibold tracking-widest text-orange-600 uppercase"
-      >
-        Food Menu
-      </div>
-      <h2 class="text-4xl font-bold uppercase text-gray-800">MenuKORT</h2>
-      <div class="w-16 h-1 bg-orange-500 inline-block mb-4"></div>
-    </div>
     <div class="tabs flex justify-center mb-4 space-x-8">
       <button
         v-for="tab in tabs"
@@ -27,42 +17,50 @@
     <div class="tab-content">
       <div v-show="currentTab === 'Forretter'">
         <h2 class="text-2xl">Ekstra Brød og smør 8,-</h2>
-        <MenukortForretter />
+        <TakeawayForretter />
       </div>
       <div v-show="currentTab === 'Børn'">
-        <MenukortHovedretterBørn />
+        <TakeawayHovedretterBørn />
       </div>
       <div v-show="currentTab === 'Fisk'">
-        <h2 class="text-2xl">Til alle vores kødretter og fiskeretter kan de frit vælge mellem: <br> Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.</h2>
-        <MenukortHovedretterFisk />
+        <h2 class="text-2xl">
+          Til alle vores kødretter og fiskeretter kan de frit vælge mellem:
+          <br />
+          Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.
+        </h2>
+        <TakeawayHovedretterFisk />
       </div>
       <div v-show="currentTab === 'Grillet Kød'">
-        <h2 class="text-2xl">Til alle vores kødretter og fiskeretter kan de frit vælge mellem: <br> Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.</h2>
-        <MenukortHovedretterGrillet />
+        <h2 class="text-2xl">
+          Til alle vores kødretter og fiskeretter kan de frit vælge mellem:
+          <br />
+          Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.
+        </h2>
+        <TakeawayHovedretterGrillet />
       </div>
       <div v-show="currentTab === 'Oksemørbrad'">
-        <h2 class="text-2xl">Til alle vores kødretter og fiskeretter kan de frit vælge mellem: <br> Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.</h2>
-        <MenukortHovedretterOksemørbrad />
+        <h2 class="text-2xl">
+          Til alle vores kødretter og fiskeretter kan de frit vælge mellem:
+          <br />
+          Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.
+        </h2>
+        <TakeawayHovedretterOksemørbrad />
       </div>
       <div v-show="currentTab === 'Pasta'">
-        <MenukortHovedretterPasta />
+        <TakeawayHovedretterPasta />
       </div>
       <div v-show="currentTab === 'Pizza'">
-        <MenukortHovedretterPizza />
+        <TakeawayHovedretterPizza />
       </div>
       <div v-show="currentTab === 'Scaloppine'">
-        <MenukortHovedretterScaloppine />
+        <TakeawayHovedretterScaloppine />
       </div>
       <div v-show="currentTab === 'Supper'">
         <h2 class="text-2xl">Ekstra Brød og smør 8,-</h2>
-        <MenukortHovedretterSupper />
-      </div>
-
-      <div v-show="currentTab === 'Hovedretter'">
-        <MenukortHovedretter />
+        <TakeawayHovedretterSupper />
       </div>
       <div v-show="currentTab === 'Desert'">
-        <MenukortDeserter />
+        <TakeawayDeserter />
       </div>
     </div>
   </div>

@@ -10,7 +10,7 @@
         /></span>
         <li><NuxtLink to="/galleri"> Galleri</NuxtLink></li>
         <li><NuxtLink to="/kontakt">Kontakt Os</NuxtLink></li>
-        <li><NuxtLink to="/omos"> Om os</NuxtLink></li>
+        <!-- <li><NuxtLink to="/omos"> Om os</NuxtLink></li> -->
       </ul>
     </nav>
     <nav class="phoneNav"></nav>

@@ -4,5 +4,10 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-headlessui',
+    '@nuxtjs/sanity'
   ],
+  sanity: {
+    projectId: 'drjvsy8w',
+    useCdn: true,
+  }
 })

@@ -20,6 +20,10 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.16",
     "@heroicons/vue": "^2.0.18",
-    "@maptiler/sdk": "^1.2.0"
+    "@maptiler/sdk": "^1.2.0",
+    "@nuxtjs/sanity": "^1.8.3",
+    "@sanity/client": "^6.8.6",
+    "@sanity/image-url": "^1.0.2",
+    "sanity-blocks-vue-component": "^1.0.1"
   }
 }

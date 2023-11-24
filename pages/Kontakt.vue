@@ -144,8 +144,6 @@ onMounted(() => {
 const query = groq`{ "kontaktinfo": *[_type == "contactInfo"] }`;
 const sanity = useSanity();
 const { data } = await useAsyncData("kontaktinfo", () => sanity.fetch(query));
-console.log(data);
-console.log(data._rawValue.kontaktinfo);
 </script>
 
 <style>

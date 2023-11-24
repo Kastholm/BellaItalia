@@ -4,7 +4,11 @@
       <div
         class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48"
       >
-        <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+        <div
+          v-for="contactInfo in data.kontaktinfo"
+          :key="contactInfo._id"
+          class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg"
+        >
           <div
             class="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2"
           >
@@ -37,13 +41,9 @@
             </svg>
           </div>
           <h2 class="text-3xl font-bold tracking-tight text-gray-900">
-            Get in touch
+            {{ contactInfo.title }}
           </h2>
-          <p class="mt-6 text-lg leading-8 text-gray-600">
-            Proin volutpat consequat porttitor cras nullam gravida at. Orci
-            molestie a eu arcu. Sed ut tincidunt integer elementum id sem. Arcu
-            sed malesuada et magna.
-          </p>
+
           <dl class="mt-10 space-y-4 text-base leading-7 text-gray-600">
             <div class="flex gap-x-4">
               <dt class="flex-none">
@@ -53,7 +53,7 @@
                   aria-hidden="true"
                 />
               </dt>
-              <dd>545 Mavis Island<br />Chicago, IL 99191</dd>
+              <dd>{{ contactInfo.address }}</dd>
             </div>
             <div class="flex gap-x-4">
               <dt class="flex-none">
@@ -61,12 +61,12 @@
                 <PhoneIcon class="h-7 w-6 text-gray-400" aria-hidden="true" />
               </dt>
               <dd>
-                <a class="hover:text-gray-900" href="tel:+1 (555) 234-5678"
-                  >+1 (555) 234-5678</a
-                >
+                <a class="hover:text-gray-900" href="tel:+1 (555) 234-5678">{{
+                  contactInfo.phoneNumber
+                }}</a>
               </dd>
             </div>
-            <div class="flex gap-x-4">
+            <!--  <div class="flex gap-x-4">
               <dt class="flex-none">
                 <span class="sr-only">Telephone</span>
                 <EnvelopeIcon
@@ -79,12 +79,20 @@
                   >hello@example.com</a
                 >
               </dd>
-            </div>
+            </div> -->
           </dl>
+          <div class="blocks mt-6 leading-8 text-gray-600">
+            <SanityBlocks
+              :blocks="contactInfo.description"
+              :serializers="serializers"
+            />
+          </div>
         </div>
       </div>
       <div class="map-wrap grid">
-        <div class="px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48"><div class="map" ref="mapContainer"></div></div>
+        <div class="px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+          <div class="map" ref="mapContainer"></div>
+        </div>
       </div>
       <div></div>
     </div>
@@ -97,7 +105,7 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/vue/24/outline";
-
+import { SanityBlocks } from "sanity-blocks-vue-component";
 import { Map, MapStyle, Marker, config } from "@maptiler/sdk";
 import { shallowRef, onMounted, onUnmounted, markRaw } from "vue";
 import "@maptiler/sdk/dist/maptiler-sdk.css";
@@ -132,9 +140,15 @@ onMounted(() => {
   onUnmounted(() => {
     map.value?.remove();
   });
+
+const query = groq`{ "kontaktinfo": *[_type == "contactInfo"] }`;
+const sanity = useSanity();
+const { data } = await useAsyncData("kontaktinfo", () => sanity.fetch(query));
+console.log(data);
+console.log(data._rawValue.kontaktinfo);
 </script>
 
-<style scoped>
+<style>
 .map-wrap {
   position: relative;
 
@@ -147,5 +161,11 @@ onMounted(() => {
   margin-left: 4em;
   width: 500px;
   height: 500px;
+}
+
+.blocks h1 {
+  font-size: 1.4rem !important;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 </style>

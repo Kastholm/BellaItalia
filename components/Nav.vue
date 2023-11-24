@@ -13,7 +13,7 @@
         <!-- <li><NuxtLink to="/omos"> Om os</NuxtLink></li> -->
       </ul>
     </nav>
-    <nav class="phoneNav"></nav>
+    <nav class="phoneNav"> </nav>
   </header>
   <phone-nav />
 </template>

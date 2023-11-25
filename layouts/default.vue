@@ -1,6 +1,6 @@
 <template>
   <Nav />
-  <main class="pt-32">
+  <main class="pt-20">
     <slot />
   </main>
   <Footer />
@@ -10,6 +10,14 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.after::after {
+content:"";
+display: block;
+height: 4px;
+width: 150px;
+background: linear-gradient(to right, #009246 0%, #009246 33.33%, #cecdcd 33.33%, #FFFFFF 66.66%, #CE2B37 66.66%, #CE2B37 100%);
 }
 
 .loader {

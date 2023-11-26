@@ -8,161 +8,66 @@
         class="relative isolate overflow-hidden bg-gray-900 pb-16 pt-14 sm:pb-20"
       >
         <img
-          src="../assets/img/forside/bellaForside.jpg"
+          src="https://i.ibb.co/VmZX39b/a9ezar46fbxjvuyd8r2z-1.webp"
           alt=""
-          class="absolute inset-0 -z-10 h-full w-full object-cover"
+          class="absolute inset-0 -z-20 h-full w-full object-cover"
         />
-        <div
-          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        >
-          <div
-            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style="
-              clip-path: polygon(
-                74.1% 44.1%,
-                100% 61.6%,
-                97.5% 26.9%,
-                85.5% 0.1%,
-                80.7% 2%,
-                72.5% 32.5%,
-                60.2% 62.4%,
-                52.4% 68.1%,
-                47.5% 58.3%,
-                45.2% 34.5%,
-                27.5% 76.7%,
-                0.1% 64.9%,
-                17.9% 100%,
-                27.6% 76.8%,
-                76.1% 97.7%,
-                74.1% 44.1%
-              );
-            "
-          />
-        </div>
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div
-                class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20"
-              >
-                Announcing our next round of funding.
-                <a href="#" class="font-semibold text-white"
-                  ><span class="absolute inset-0" aria-hidden="true" />Read more
-                  <span aria-hidden="true">&rarr;</span></a
-                >
-              </div>
-            </div>
+          <div class="mx-auto max-w-2xl py-4">
+           <div class="absolute bg-black inset-0 bg-opacity-50 -z-10"></div>
             <div class="text-center">
               <h1
-                class="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+                class="text-4xl text-[#009246] font-bold tracking-tight text-[#009246] sm:text-6xl"
               >
-                Deploy to the cloud with confidence
+                Traditionel Italiensk Cuisine siden 1989
+                <div class="after ml-64 mt-3 z-10"></div>
               </h1>
-              <p class="mt-6 text-lg leading-8 text-gray-300">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
+              <p class="mt-6 mb-32 text-lg leading-8 text-white md:w-[700px]">
+                Hos Bella Italia har vi siden 1989 skabt autentisk Italiesk Cuisine i hjertet af Kolding By. Kom ind og spis Alla Carte eller bestil Take-away.
               </p>
-              <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="#"
-                  class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-                  >Get started</a
-                >
-                <a href="#" class="text-sm font-semibold leading-6 text-white"
-                  >Live demo <span aria-hidden="true">→</span></a
-                >
-              </div>
+              <button href="#" class="hover:scale-105 transition font-bold text-lg absolute top-40 text-[#1c1c1c] h-14 w-32 bg-[#eeecec] text-black inset-0 m-auto rounded">
+             Kontakt os
+            </button>
             </div>
-          </div>
-
-          <!-- Logo cloud -->
-          <div
-            class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
-          >
-            <img
-              class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
-              alt="Transistor"
-              width="158"
-              height="48"
-            />
-            <img
-              class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
-              alt="Reform"
-              width="158"
-              height="48"
-            />
-            <img
-              class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
-              alt="Tuple"
-              width="158"
-              height="48"
-            />
-            <img
-              class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
-              alt="SavvyCal"
-              width="158"
-              height="48"
-            />
-            <img
-              class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
-              alt="Statamic"
-              width="158"
-              height="48"
-            />
-          </div>
-        </div>
-        <div
-          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        >
-          <div
-            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style="
-              clip-path: polygon(
-                74.1% 44.1%,
-                100% 61.6%,
-                97.5% 26.9%,
-                85.5% 0.1%,
-                80.7% 2%,
-                72.5% 32.5%,
-                60.2% 62.4%,
-                52.4% 68.1%,
-                47.5% 58.3%,
-                45.2% 34.5%,
-                27.5% 76.7%,
-                0.1% 64.9%,
-                17.9% 100%,
-                27.6% 76.8%,
-                76.1% 97.7%,
-                74.1% 44.1%
-              );
-            "
-          />
+          </div>     
         </div>
       </div>
     </header>
 
     
      
+    <div class="flex block mt-1 gap-1"> 
+          <div alt="" class="w-[50%] max-w-[50%] h-60 bgimg relative z-0 bg-bottom">
+            <div class="absolute bg-black inset-0 bg-opacity-50 -z-10"></div>
+              <h2 class="text-3xl text-white left-[25px] h-4 w-60 bottom-28 absolute inset-0 m-auto">VORES UDVALG</h2>
+              <div class="after mt-[95px] ml-[274px] mt-3 z-10"></div>
+              <button class=" hover:scale-105 transition font-bold text-lg h-14 w-32 bg-[#eeecec] text-[#1c1c1c] rounded absolute inset-0 m-auto top-10">
+              Menu
+              </button>
+          </div>
 
+        
+          <div alt="" class="w-[50%] max-w-[50%] h-60 bgimg2 relative z-0" >
+            <div class="absolute bg-black inset-0 bg-opacity-50 -z-10"></div>
+            <div class="after mt-[95px] ml-[273px] mt-3 z-10"></div>
+            <h2 class="text-3xl text-white left-[85px] h-4 w-60 bottom-28 absolute inset-0 m-auto">TAKE AWAY</h2>
+            <button class="hover:scale-105 transition font-bold text-lg absolute h-14 w-32 bg-[#eeecec] text-[#1c1c1c] inset-0 m-auto top-10 rounded">
+             Bestil
+            </button>
+          </div>
+          </div>
       <!-- Feature section -->
-      <div class="mt-32 sm:mt-56">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mt-24">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-32">
           <div class="mx-auto max-w-2xl sm:text-center">
-            <h2 class="text-base font-semibold leading-7 text-indigo-600">
-              Everything you need
+            <h2 class="text-base max-w-[160px] m-auto font-semibold leading-7 text-[#42934d]">
+              Ægte Italiensk Cuisine
+              <div class="after ml-1 mt-1"></div>
             </h2>
             <p
-              class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+              class="mt-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
             >
-              No server? No problem.
+              Altid hjemmelavet anti pasti 
             </p>
             <p class="mt-6 text-lg leading-8 text-gray-600">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
@@ -171,284 +76,35 @@
             </p>
           </div>
         </div>
-        <div class="relative overflow-hidden pt-16">
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <img
-              src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
-              alt="App screenshot"
-              class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
-              width="2432"
-              height="1442"
-            />
-            <div class="relative" aria-hidden="true">
-              <div
-                class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]"
-              />
-            </div>
-          </div>
-        </div>
+        
       </div>
 
      
 
-      <!-- Pricing section -->
-      <div class="relative isolate mt-32 bg-white px-6 sm:mt-56 lg:px-8">
-        <div
-          class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
-          aria-hidden="true"
-        >
-          <div
-            class="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
-            style="
-              clip-path: polygon(
-                74.1% 44.1%,
-                100% 61.6%,
-                97.5% 26.9%,
-                85.5% 0.1%,
-                80.7% 2%,
-                72.5% 32.5%,
-                60.2% 62.4%,
-                52.4% 68.1%,
-                47.5% 58.3%,
-                45.2% 34.5%,
-                27.5% 76.7%,
-                0.1% 64.9%,
-                17.9% 100%,
-                27.6% 76.8%,
-                76.1% 97.7%,
-                74.1% 44.1%
-              );
-            "
-          />
-        </div>
-        <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
-          <h2 class="text-base font-semibold leading-7 text-indigo-600">
-            Pricing
-          </h2>
-          <p
-            class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
-          >
-            The right price for you, whoever you are
-          </p>
-        </div>
-        <p
-          class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600"
-        >
-          Qui iusto aut est earum eos quae. Eligendi est at nam aliquid ad quo
-          reprehenderit in aliquid fugiat dolorum voluptatibus.
-        </p>
-        <div
-          class="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2"
-        >
-          <div
-            v-for="(tier, tierIdx) in tiers"
-            :key="tier.id"
-            :class="[
-              tier.featured
-                ? 'relative bg-gray-900 shadow-2xl'
-                : 'bg-white/60 sm:mx-8 lg:mx-0',
-              tier.featured
-                ? ''
-                : tierIdx === 0
-                ? 'rounded-t-3xl sm:rounded-b-none lg:rounded-tr-none lg:rounded-bl-3xl'
-                : 'sm:rounded-t-none lg:rounded-tr-3xl lg:rounded-bl-none',
-              'rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10',
-            ]"
-          >
-            <h3
-              :id="tier.id"
-              :class="[
-                tier.featured ? 'text-indigo-400' : 'text-indigo-600',
-                'text-base font-semibold leading-7',
-              ]"
-            >
-              {{ tier.name }}
-            </h3>
-            <p class="mt-4 flex items-baseline gap-x-2">
-              <span
-                :class="[
-                  tier.featured ? 'text-white' : 'text-gray-900',
-                  'text-5xl font-bold tracking-tight',
-                ]"
-                >{{ tier.priceMonthly }}</span
-              >
-              <span
-                :class="[
-                  tier.featured ? 'text-gray-400' : 'text-gray-500',
-                  'text-base',
-                ]"
-                >/month</span
-              >
-            </p>
-            <p
-              :class="[
-                tier.featured ? 'text-gray-300' : 'text-gray-600',
-                'mt-6 text-base leading-7',
-              ]"
-            >
-              {{ tier.description }}
-            </p>
-            <ul
-              role="list"
-              :class="[
-                tier.featured ? 'text-gray-300' : 'text-gray-600',
-                'mt-8 space-y-3 text-sm leading-6 sm:mt-10',
-              ]"
-            >
-              <li
-                v-for="feature in tier.features"
-                :key="feature"
-                class="flex gap-x-3"
-              >
-                <CheckIcon
-                  :class="[
-                    tier.featured ? 'text-indigo-400' : 'text-indigo-600',
-                    'h-6 w-5 flex-none',
-                  ]"
-                  aria-hidden="true"
-                />
-                {{ feature }}
-              </li>
-            </ul>
-            <a
-              :href="tier.href"
-              :aria-describedby="tier.id"
-              :class="[
-                tier.featured
-                  ? 'bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500'
-                  : 'text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline-indigo-600',
-                'mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
-              ]"
-              >Get started today</a
-            >
-          </div>
-        </div>
-      </div>
 
-      <!-- FAQ section -->
-      <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
-        <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
-          <h2
-            class="text-2xl font-bold leading-10 tracking-tight text-gray-900"
-          >
-            Frequently asked questions
-          </h2>
-          <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
-            <Disclosure
-              as="div"
-              v-for="faq in faqs"
-              :key="faq.question"
-              class="pt-6"
-              v-slot="{ open }"
-            >
-              <dt>
-                <DisclosureButton
-                  class="flex w-full items-start justify-between text-left text-gray-900"
-                >
-                  <span class="text-base font-semibold leading-7">{{
-                    faq.question
-                  }}</span>
-                  <span class="ml-6 flex h-7 items-center">
-                    <PlusSmallIcon
-                      v-if="!open"
-                      class="h-6 w-6"
-                      aria-hidden="true"
-                    />
-                    <MinusSmallIcon v-else class="h-6 w-6" aria-hidden="true" />
-                  </span>
-                </DisclosureButton>
-              </dt>
-              <DisclosurePanel as="dd" class="mt-2 pr-12">
-                <p class="text-base leading-7 text-gray-600">
-                  {{ faq.answer }}
-                </p>
-              </DisclosurePanel>
-            </Disclosure>
-          </dl>
-        </div>
-      </div>
     </main>
-
-    <!-- Footer -->
-    <footer class="mt-32 bg-gray-900 sm:mt-56" aria-labelledby="footer-heading">
-      <h2 id="footer-heading" class="sr-only">Footer</h2>
-      <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
-        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-          <img
-            class="h-7"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-            alt="Company name"
-          />
-          <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div class="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 class="text-sm font-semibold leading-6 text-white">
-                  Solutions
-                </h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li
-                    v-for="item in footerNavigation.solutions"
-                    :key="item.name"
-                  >
-                    <a
-                      :href="item.href"
-                      class="text-sm leading-6 text-gray-300 hover:text-white"
-                      >{{ item.name }}</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="mt-10 md:mt-0">
-                <h3 class="text-sm font-semibold leading-6 text-white">
-                  Support
-                </h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li v-for="item in footerNavigation.support" :key="item.name">
-                    <a
-                      :href="item.href"
-                      class="text-sm leading-6 text-gray-300 hover:text-white"
-                      >{{ item.name }}</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 class="text-sm font-semibold leading-6 text-white">
-                  Company
-                </h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li v-for="item in footerNavigation.company" :key="item.name">
-                    <a
-                      :href="item.href"
-                      class="text-sm leading-6 text-gray-300 hover:text-white"
-                      >{{ item.name }}</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="mt-10 md:mt-0">
-                <h3 class="text-sm font-semibold leading-6 text-white">
-                  Legal
-                </h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li v-for="item in footerNavigation.legal" :key="item.name">
-                    <a
-                      :href="item.href"
-                      class="text-sm leading-6 text-gray-300 hover:text-white"
-                      >{{ item.name }}</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
+
+<style scoped>
+.after::after {
+content:"";
+display: block;
+height: 4px;
+width: 150px;
+background: linear-gradient(to right, #009246 0%, #009246 33.33%, #cecdcd 33.33%, #FFFFFF 66.66%, #CE2B37 66.66%, #CE2B37 100%);
+}
+
+.bgimg {
+  background-image: url("https://i.ibb.co/QdpBdgd/recipe-pappardelle-1.webp");
+  background-size: cover;
+}
+
+.bgimg2 {
+  background-image: url("https://i.ibb.co/G9NGdLz/7f71fcc474fcf74c620f23d6c559fc43-1.webp");
+  background-size: cover;
+}
+</style>
 
 <script setup>
 import { ref } from "vue";

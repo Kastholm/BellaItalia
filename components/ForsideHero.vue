@@ -23,7 +23,7 @@
                 <div class="after ml-64 mt-3 z-10"></div>
               </h1>
               <p class="mt-6 mb-32 text-lg leading-8 text-white md:w-[700px]">
-                Hos Bella Italia har vi siden 1989 skabt autentisk Italiesk Cuisine i hjertet af Kolding By. Kom ind og spis Alla Carte eller bestil Take-away.
+                Hos Bella Italia har vi siden 1989 skabt autentisk Italiesk Cuisine i hjertet af Kolding By. Kom ind og spis Ala Carte eller bestil Take-away.
               </p>
               <button href="#" class="hover:scale-105 transition font-bold text-lg absolute top-40 text-[#1c1c1c] h-14 w-32 bg-[#eeecec] text-black inset-0 m-auto rounded">
              Kontakt os

@@ -9,11 +9,11 @@
 
     <div v-else class="gallery" v-for="gallery in data" :key="gallery._id">
       <div
-        class="gallery-item"
+        class="gallery-item w-1/4 p-4"
         v-for="image in gallery.content.images"
         :key="image._key"
       >
-        <img class="gallery-image w-1/4 p-4" :src="image.imageUrl" :alt="image.alt" />
+        <img class="gallery-image" :src="image.imageUrl" :alt="image.alt" />
       </div>
     </div>
   </div>

@@ -7,9 +7,9 @@
       <div class="loader"></div>
     </div>
 
-    <div v-else class="gallery" v-for="gallery in data" :key="gallery._id">
+    <div v-else class="gallery w-1/4 p-4" v-for="gallery in data" :key="gallery._id">
       <div
-        class="gallery-item w-1/4 p-4"
+        class="gallery-item"
         v-for="image in gallery.content.images"
         :key="image._key"
       >

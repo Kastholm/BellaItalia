@@ -2,7 +2,7 @@
   <div class="container">
     <div
       v-if="!data || data.length === 0"
-      class="flex justify-center items-center h-screen"
+      class="flex flex-wrap justify-center items-center h-screen"
     >
       <div class="loader"></div>
     </div>
@@ -13,7 +13,7 @@
         v-for="image in gallery.content.images"
         :key="image._key"
       >
-        <img class="gallery-image" :src="image.imageUrl" :alt="image.alt" />
+        <img class="gallery-image w-1/4 p-4" :src="image.imageUrl" :alt="image.alt" />
       </div>
     </div>
   </div>

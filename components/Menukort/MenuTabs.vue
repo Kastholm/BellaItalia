@@ -5,10 +5,9 @@
       <div
         class="text-2xl font-semibold tracking-widest text-orange-600 uppercase"
       >
-        Food Menu
+        Se vores
       </div>
-      <h2 class="text-4xl font-bold uppercase text-gray-800">MenuKORT</h2>
-      <div class="w-16 h-1 bg-orange-500 inline-block mb-4"></div>
+      <h2 class="text-4xl font-bold uppercase text-gray-800 after">MenuKORT</h2>
     </div>
     <div class="tabs flex justify-center mb-4 space-x-8">
       <button

@@ -9,5 +9,5 @@ export default defineNuxtConfig({
   sanity: {
     projectId: 'drjvsy8w',
     useCdn: true,
-  }
+  },
 })

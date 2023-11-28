@@ -40,7 +40,7 @@
               />
             </svg>
           </div>
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+          <h2 class="text-4xl font-bold font-header tracking-tight text-gray-900">
             {{ contactInfo.title }}
           </h2>
 
@@ -162,8 +162,10 @@ const { data } = await useAsyncData("kontaktinfo", () => sanity.fetch(query));
 }
 
 .blocks h1 {
-  font-size: 1.4rem !important;
+  font-size: 1.8rem !important;
   font-weight: 600;
+  color: #1b1a1a;
   margin-bottom: 0.5rem;
+  @apply font-header
 }
 </style>

@@ -1,98 +1,116 @@
 <template>
-  <div class="bg-white">
+  <div>
     <!-- Header -->
     <main>
-    <header class="inset-x-0 top-0">
-      <!-- Hero section -->
-      <div
-        class="relative isolate overflow-hidden bg-gray-900 pb-16 pt-14 sm:pb-20"
-      >
-        <img
-          src="https://i.ibb.co/VmZX39b/a9ezar46fbxjvuyd8r2z-1.webp"
-          alt=""
-          class="absolute inset-0 -z-20 h-full w-full object-cover"
-        />
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl py-4">
-           <div class="absolute bg-black inset-0 bg-opacity-50 -z-10"></div>
-            <div class="text-center">
-              <h1
-                class="text-4xl text-[#009246] font-bold tracking-tight text-[#009246] sm:text-6xl"
+      <header>
+        <!-- Hero section -->
+        <div class="relative isolate overflow-hidden bg-gray-900">
+          <img
+            src="/img/forside/banner.jpg"
+            alt=""
+            class="absolute inset-0 -z-20 h-full w-full object-cover"
+          />
+          <div class="m-auto max-w-7xl px-6 lg:px-8">
+            <div class="m-auto">
+              <div class="absolute bg-black inset-0 bg-opacity-50 -z-10"></div>
+              <div
+                class="text-center h-[60vh] md:h-[70vh] max-h-[900px] grid place-content-center"
               >
-                Traditionel Italiensk Cuisine siden 1989
-                <div class="after ml-64 mt-3 z-10"></div>
-              </h1>
-              <p class="mt-6 mb-32 text-lg leading-8 text-white md:w-[700px]">
-                Hos Bella Italia har vi siden 1989 skabt autentisk Italiesk Cuisine i hjertet af Kolding By. Kom ind og spis Ala Carte eller bestil Take-away.
-              </p>
-              <button href="#" class="hover:scale-105 transition font-bold text-lg absolute top-40 text-[#1c1c1c] h-14 w-32 bg-[#eeecec] text-black inset-0 m-auto rounded">
-             Kontakt os
-            </button>
+                <h1
+                  class="text-4xl text-[#fbfbfb] mt-12 tracking-tight max-w-[45rem] sm:text-6xl font-header after"
+                  style="text-shadow: 15px 15px 15px #000000"
+                >
+                  Traditionel Italiensk Cuisine siden 1989
+                </h1>
+                <p
+                  class="my-6 m-auto text-xl font-sans font-semibold leading-8 text-white md:w-[700px]"
+                  style="text-shadow: 5px 5px 5px #000000"
+                >
+                  Hos Bella Italia har vi siden 1989 skabt autentisk Italiesk
+                  Cuisine i hjertet af Kolding By. Kom ind og spis Ala Carte
+                  eller bestil Take-away.
+                </p>
+                <NuxtLink to="/kontakt">
+                  <BaseButton> Kontakt os </BaseButton>
+                </NuxtLink>
+              </div>
             </div>
-          </div>     
-        </div>
-      </div>
-    </header>
-
-    
-     
-    <div class="flex block mt-1 gap-1"> 
-          <div alt="" class="w-[50%] max-w-[50%] h-60 bgimg relative z-0 bg-bottom">
-            <div class="absolute bg-black inset-0 bg-opacity-50 -z-10"></div>
-              <h2 class="text-3xl text-white left-[25px] h-4 w-60 bottom-28 absolute inset-0 m-auto">VORES UDVALG</h2>
-              <div class="after mt-[95px] ml-[274px] mt-3 z-10"></div>
-              <button class=" hover:scale-105 transition font-bold text-lg h-14 w-32 bg-[#eeecec] text-[#1c1c1c] rounded absolute inset-0 m-auto top-10">
-              Menu
-              </button>
-          </div>
-
-        
-          <div alt="" class="w-[50%] max-w-[50%] h-60 bgimg2 relative z-0" >
-            <div class="absolute bg-black inset-0 bg-opacity-50 -z-10"></div>
-            <div class="after mt-[95px] ml-[273px] mt-3 z-10"></div>
-            <h2 class="text-3xl text-white left-[85px] h-4 w-60 bottom-28 absolute inset-0 m-auto">TAKE AWAY</h2>
-            <button class="hover:scale-105 transition font-bold text-lg absolute h-14 w-32 bg-[#eeecec] text-[#1c1c1c] inset-0 m-auto top-10 rounded">
-             Bestil
-            </button>
-          </div>
-          </div>
-      <!-- Feature section -->
-      <div class="mt-24">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-32">
-          <div class="mx-auto max-w-2xl sm:text-center">
-            <h2 class="text-base max-w-[160px] m-auto font-semibold leading-7 text-[#42934d]">
-              Ægte Italiensk Cuisine
-              <div class="after ml-1 mt-1"></div>
-            </h2>
-            <p
-              class="mt-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
-            >
-              Altid hjemmelavet anti pasti 
-            </p>
-            <p class="mt-6 text-lg leading-8 text-gray-600">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-              impedit perferendis suscipit eaque, iste dolor cupiditate
-              blanditiis.
-            </p>
           </div>
         </div>
-        
+      </header>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-1 mt-1">
+        <div alt="" class="bgimg relative z-0 bg-bottom">
+          <div
+            class="grid place-content-center gap-4 text-center h-[20vh] md:h-[30vh] max-h-[400px]"
+          >
+            <div class="absolute bg-black inset-0 bg-opacity-50 -z-10"></div>
+            <h2 class="text-3xl text-white font-header after">VORES UDVALG</h2>
+            <NuxtLink to="/menukort">
+              <BaseButton> Menu </BaseButton>
+            </NuxtLink>
+          </div>
+        </div>
+
+        <div alt="" class="bgimg2 relative z-0">
+          <div
+            class="grid place-content-center text-center gap-4 h-[20vh] md:h-[30vh] max-h-[400px]"
+          >
+            <div class="absolute bg-black inset-0 bg-opacity-50 -z-10"></div>
+            <h2 class="text-3xl font-header text-white after">TAKE AWAY</h2>
+            <NuxtLink to="/takeaway">
+              <BaseButton> Bestil </BaseButton>
+            </NuxtLink>
+          </div>
+        </div>
       </div>
-
-     
-
-
     </main>
+    <!-- Feature section -->
+    <div class="mt-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-32">
+        <div class="mx-auto max-w-2xl sm:text-center">
+          <h2
+            class="text-base max-w-[160px] m-auto font-semibold leading-7 text-[#42934d]"
+          >
+            Ægte Italiensk Cuisine
+            <div class="after ml-1 mt-1"></div>
+          </h2>
+          <p
+            class="mt-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl font-header"
+          >
+            Altid hjemmelavet anti pasti
+          </p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Bella Italia er blandt (hvis ikke) den eneste restaurant i Kolding,
+            der stadig har samme ejer og samme menukort siden 1989. Bella Italia
+            er drevet og ejet af Rosario Castorina. Personalet er stort set
+            stadig det samme som i begyndelsen, men selvfølgelig har der været
+            et par udskiftninger i staben. Vi byder alle vores gæster der kigger
+            forbi siden, velkommen og håber at i får en god oplevelse. Caio, og
+            vi ses igen på BELLA ITALIA
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .after::after {
-content:"";
-display: block;
-height: 4px;
-width: 150px;
-background: linear-gradient(to right, #009246 0%, #009246 33.33%, #cecdcd 33.33%, #FFFFFF 66.66%, #CE2B37 66.66%, #CE2B37 100%);
+  content: "";
+  display: block;
+  height: 4px;
+  margin-top: 5px;
+  width: 150px;
+  background: linear-gradient(
+    to right,
+    #009246 0%,
+    #009246 33.33%,
+    #cecdcd 33.33%,
+    #ffffff 66.66%,
+    #ce2b37 66.66%,
+    #ce2b37 100%
+  );
 }
 
 .bgimg {

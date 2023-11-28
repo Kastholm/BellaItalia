@@ -1,23 +1,35 @@
 <template>
   <Nav />
-  <main class="pt-20">
+  <main>
     <slot />
   </main>
   <Footer />
 </template>
 
 <style>
+@import url("https://use.typekit.net/gsz4vfd.css");
 body {
   margin: 0;
   padding: 0;
+  background-color: #fbfbfb;
 }
 
 .after::after {
-content:"";
-display: block;
-height: 4px;
-width: 150px;
-background: linear-gradient(to right, #009246 0%, #009246 33.33%, #cecdcd 33.33%, #FFFFFF 66.66%, #CE2B37 66.66%, #CE2B37 100%);
+  content: "";
+  display: block;
+  height: 4px;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 5px;
+  background: linear-gradient(
+    to right,
+    #009246 0%,
+    #009246 33.33%,
+    #cecdcd 33.33%,
+    #ffffff 66.66%,
+    #ce2b37 66.66%,
+    #ce2b37 100%
+  );
 }
 
 .loader {

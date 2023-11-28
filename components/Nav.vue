@@ -5,12 +5,12 @@
         <li><NuxtLink to="/">Forside</NuxtLink></li>
         <li><NuxtLink to="/Menukort">Menukort</NuxtLink></li>
         <li><NuxtLink to="/Takeaway">Take Away</NuxtLink></li>
-        <span class="logo-bg"
-          ><img class="logo" src="../assets/img/renderLogo.jpg" alt=""
-        /></span>
+        <div class="logo-bg"
+          ><img class="logo" src="/img/logo.png" alt=""
+        /></div>
         <li><NuxtLink to="/galleri"> Galleri</NuxtLink></li>
         <li><NuxtLink to="/kontakt">Kontakt Os</NuxtLink></li>
-        <!-- <li><NuxtLink to="/omos"> Om os</NuxtLink></li> -->
+        <li><NuxtLink to="/omos"> Om os</NuxtLink></li>
       </ul>
     </nav>
     <nav class="phoneNav"> </nav>
@@ -60,31 +60,17 @@ select option {
   background: none !important;
 }
 .mainNav {
-  @apply text-white hidden md:block w-screen fixed z-50;
+  @apply text-white hidden md:block w-screen fixed top-0 text-lg z-50;
   background-color: rgb(34, 34, 34);
 }
 .mainNav .logo {
-  @apply w-[13em] h-[8em] absolute top-0;
-}
-.logo-bg {
-  @apply w-[13em] h-[7.4em] relative;
-}
-.logo-bg::before {
-  content: "";
-  @apply bg-black;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 23%;
-  height: 100%;
-  width: 57%;
-  border-radius: 100%;
+  @apply  h-[7em];
 }
 .mainNav ul {
   @apply flex justify-center  h-20 overflow-visible;
 }
 .mainNav li {
-  @apply m-auto;
+  @apply m-auto min-w-[4em];
 }
 
 .phoneNav .logo {

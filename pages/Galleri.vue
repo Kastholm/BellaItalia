@@ -1,7 +1,7 @@
 <template>
   <div class="text-center mb-10 mt-44">
     <div
-      class="text-2xl font-semibold tracking-widest text-orange-600 uppercase"
+      class="text-2xl font-semibold tracking-widest text-orange-400 uppercase"
     >
       Se Vores
     </div>

@@ -2,12 +2,9 @@
   <div class="container mx-auto px-4 mt-20">
     <!-- Tab Headers -->
     <div class="text-center mb-10">
-      <div
-        class="text-2xl font-semibold tracking-widest text-orange-600 uppercase"
-      >
-        Se vores
-      </div>
-      <h2 class="text-4xl font-bold uppercase text-gray-800 after">MenuKORT</h2>
+      <h2 class="text-4xl font-bold uppercase text-gray-800 font-header after">
+        MenuKORT
+      </h2>
     </div>
     <div class="tabs flex justify-center mb-4 space-x-8">
       <button
@@ -18,61 +15,29 @@
         class="font-medium text-center transition duration-300"
       >
         <i :class="`icon-${tab.toLowerCase()}`"></i>
-        <span class="text-orange-600 text-lg">{{ tab }}</span>
+        <span class="text-gray-600 text-lg">{{ tab }}</span>
       </button>
     </div>
 
     <!-- Tab Content -->
     <div class="tab-content">
-      <div v-show="currentTab === 'Forretter'">
+      <div v-if="currentTab === 'Forretter'">
         <h2 class="text-2xl">Ekstra Brød og smør 8,-</h2>
         <MenukortForretter />
       </div>
-      <div v-show="currentTab === 'Børn'">
+      <div v-if="currentTab === 'Til de små'">
         <MenukortHovedretterBørn />
       </div>
-      <div v-show="currentTab === 'Fisk'">
-        <h2 class="text-2xl">
-          Til alle vores kødretter og fiskeretter kan de frit vælge mellem:
-          <br />
-          Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.
-        </h2>
-        <MenukortHovedretterFisk />
-      </div>
-      <div v-show="currentTab === 'Grillet Kød'">
-        <h2 class="text-2xl">
-          Til alle vores kødretter og fiskeretter kan de frit vælge mellem:
-          <br />
-          Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.
-        </h2>
-        <MenukortHovedretterGrillet />
-      </div>
-      <div v-show="currentTab === 'Oksemørbrad'">
-        <h2 class="text-2xl">
-          Til alle vores kødretter og fiskeretter kan de frit vælge mellem:
-          <br />
-          Bagt Kartoffel, Pommes Frites eller rosmarinkartofler.
-        </h2>
-        <MenukortHovedretterOksemørbrad />
-      </div>
-      <div v-show="currentTab === 'Pasta'">
+      <div v-if="currentTab === 'Pasta'">
         <MenukortHovedretterPasta />
       </div>
-      <div v-show="currentTab === 'Pizza'">
+      <div v-if="currentTab === 'Pizza'">
         <MenukortHovedretterPizza />
       </div>
-      <div v-show="currentTab === 'Scaloppine'">
-        <MenukortHovedretterScaloppine />
-      </div>
-      <div v-show="currentTab === 'Supper'">
-        <h2 class="text-2xl">Ekstra Brød og smør 8,-</h2>
-        <MenukortHovedretterSupper />
-      </div>
-
-      <div v-show="currentTab === 'Hovedretter'">
+      <div v-if="currentTab === 'Hovedretter'">
         <MenukortHovedretter />
       </div>
-      <div v-show="currentTab === 'Desert'">
+      <div v-if="currentTab === 'Desert'">
         <MenukortDeserter />
       </div>
     </div>
@@ -82,14 +47,10 @@
 <script setup>
 const tabs = [
   "Forretter",
-  "Supper",
   "Pasta",
   "Pizza",
-  "Scaloppine",
-  "Fisk",
-  "Oksemørbrad",
-  "Grillet Kød",
-  "Børn",
+  "Hovedretter",
+  "Til de små",
   "Desert",
 ];
 const currentTab = ref(tabs[0]);
@@ -97,13 +58,13 @@ const currentTab = ref(tabs[0]);
 
 <style scoped>
 .tab-active {
-  border-bottom: 2px solid #f97316; /* Tailwind orange-500 */
+  border-bottom: 2px solid #100f0e; /* Tailwind orange-500 */
 }
 .tab-inactive {
   border-bottom: 2px solid transparent;
 }
 .tab-inactive:hover {
-  border-bottom: 2px solid #fdba74; /* Tailwind orange-200 */
+  border-bottom: 2px solid #0f0801; /* Tailwind orange-200 */
 }
 .tabs button:not(:last-child) {
   margin-right: 1rem;

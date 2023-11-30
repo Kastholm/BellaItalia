@@ -61,9 +61,9 @@
                 <PhoneIcon class="h-7 w-6 text-gray-400" aria-hidden="true" />
               </dt>
               <dd>
-                <a class="hover:text-gray-900" href="tel:+1 (555) 234-5678">{{
+                <NuxtLink class="hover:text-gray-900" to="tel:+1 (555) 234-5678">{{
                   contactInfo.phoneNumber
-                }}</a>
+                }}</NuxtLink>
               </dd>
             </div>
             <!--  <div class="flex gap-x-4">

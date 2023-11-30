@@ -64,7 +64,7 @@ select option {
   background-color: rgb(34, 34, 34);
 }
 .mainNav .logo {
-  @apply  h-[7em];
+  @apply  h-[8em];
 }
 .mainNav ul {
   @apply flex justify-center  h-20 overflow-visible;

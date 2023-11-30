@@ -47,10 +47,10 @@
           <div>
             <p class="font-medium">Genveje</p>
             <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-              <NuxtLink to="/galleri" class="hover:opacity-75" href>
+              <NuxtLink to="/galleri" class="hover:opacity-75" >
                 Galleri
               </NuxtLink>
-              <NuxtLink to="/omos" class="hover:opacity-75" href>
+              <NuxtLink to="/omos" class="hover:opacity-75" >
                 Om os
               </NuxtLink>
             </nav>
@@ -58,16 +58,16 @@
           <div>
             <p class="font-medium">Take Away</p>
             <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-              <NuxtLink class="hover:opacity-75" href> Bestil nu </NuxtLink>
+              <NuxtLink class="hover:opacity-75" > Bestil nu </NuxtLink>
             </nav>
           </div>
           <div>
             <p class="font-medium">Vores Menu</p>
             <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-              <NuxtLink to="menukort" class="hover:opacity-75" href>
+              <NuxtLink to="menukort" class="hover:opacity-75" >
                 Menukort
               </NuxtLink>
-              <NuxtLink to="menukort" class="hover:opacity-75" href>
+              <NuxtLink to="menukort" class="hover:opacity-75" >
                 Månedens Menu
               </NuxtLink>
             </nav>
@@ -75,9 +75,9 @@
           <div>
             <p class="font-medium">Kontakt os</p>
             <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-              <a class="hover:opacity-75" href> +45 75 50 58 07 </a>
-              <a class="hover:opacity-75" href> Jernbanegade 40 </a>
-              <a class="hover:opacity-75" href> 6000 Kolding </a>
+              <a class="hover:opacity-75" > +45 75 50 58 07 </a>
+              <a class="hover:opacity-75" > Jernbanegade 40 </a>
+              <a class="hover:opacity-75" > 6000 Kolding </a>
             </nav>
           </div>
         </div>

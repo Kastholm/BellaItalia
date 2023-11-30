@@ -9,7 +9,7 @@
         class="font-medium text-center transition duration-300"
       >
         <i :class="`icon-${tab.toLowerCase()}`"></i>
-        <span class="text-orange-600 text-lg">{{ tab }}</span>
+        <span class="text-orange-400 text-lg">{{ tab }}</span>
       </button>
     </div>
 

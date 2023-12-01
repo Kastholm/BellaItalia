@@ -1,5 +1,5 @@
 <template>
-   <div v-if="!data" class="flex justify-center items-center">
+  <div v-if="!data" class="flex justify-center items-center">
       <div class="loader"></div>
     </div>
   <div v-else class="shadow-md rounded-lg overflow-hidden  ">
@@ -10,7 +10,7 @@
           class="menu-section max-w-8xl mx-auto p-4"
         >
           <h1
-            class="text-4xl text-center font-bold uppercase text-gray-800 font-header after mb-12"
+            class="text-4xl text-center font-bold uppercase text-gray-800 font-header after mb-6"
           >
             {{ menuPunkt.title }}
           </h1>
@@ -34,20 +34,18 @@
                   </div>
                 </div>
                 <div class="menu-price text-green-900 text-[1.3rem] font-bold">
-                  {{ item.takeawayprice }} kr.
+                  {{ item.price }} kr.
                 </div>
               </div>
             </div>
           </div>
         </div>
   </div>
-  <!-- ,
-      "takeawayprice": 80 -->
 </template>
 
 
 <script setup>
-const query = groq`*[_type == "menu" && (_id == "04d4ca6d-3278-4b7a-a84b-3b405090d78f")] {
+const query = groq`*[(_id == "13525770-d1aa-4a8f-b426-6826962e1ea0" || _id == "9a67cce2-f34a-4684-9eef-1a6dfe93a55d" || _id == "c47ddaf3-78cd-4525-a52a-68517371f6d9" || _id == "30f32ccd-3235-46b5-886d-6eafbee899a5" || _id == "eebb86a3-d7d0-40f8-a8a2-1bda3ed644c1" || _id == "b03165a3-5b8f-4b5d-b254-76a9b89d47e9")] {
   title,
   sections [] {
     _key,
@@ -66,6 +64,6 @@ const { data } = useSanityQuery(query);
 console.log(data);
 </script>
 
-<style>
 
+<style scoped>
 </style>

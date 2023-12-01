@@ -24,5 +24,10 @@ export default {
       title: 'Pris',
       type: 'number'
     },
+    {
+      name: 'takeawayprice',
+      title: 'Take Away Pris',
+      type: 'number'
+    },
   ]
 };

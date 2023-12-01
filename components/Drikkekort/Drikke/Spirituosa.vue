@@ -33,7 +33,7 @@
               </div>
             </div>
             <div class="menu-price text-green-900 text-[1.3rem] font-bold">
-              {{ item.takeawayprice }} kr.
+              {{ item.price }} kr.
             </div>
           </div>
         </div>
@@ -42,8 +42,9 @@
   </div>
 </template>
 
+
 <script setup>
-const query = groq`*[_type == "menu" && (_id == "83f3a8bf-a5aa-48f6-8101-49d56b7f3331")] {
+const query = groq`*[_id == "30f32ccd-3235-46b5-886d-6eafbee899a5"] {
   title,
   sections [] {
     _key,
@@ -61,6 +62,7 @@ const { data } = useSanityQuery(query);
 
 console.log(data);
 </script>
+
 
 <style scoped>
 </style>

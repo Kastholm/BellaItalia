@@ -1,5 +1,5 @@
 <template>
-   <div v-if="!data" class="flex justify-center items-center">
+  <div v-if="!data" class="flex justify-center items-center">
       <div class="loader"></div>
     </div>
   <div v-else class="shadow-md rounded-lg overflow-hidden  ">
@@ -34,20 +34,18 @@
                   </div>
                 </div>
                 <div class="menu-price text-green-900 text-[1.3rem] font-bold">
-                  {{ item.takeawayprice }} kr.
+                  {{ item.price }} kr.
                 </div>
               </div>
             </div>
           </div>
         </div>
   </div>
-  <!-- ,
-      "takeawayprice": 80 -->
 </template>
 
 
 <script setup>
-const query = groq`*[_type == "menu" && (_id == "04d4ca6d-3278-4b7a-a84b-3b405090d78f")] {
+const query = groq`*[_id == "eebb86a3-d7d0-40f8-a8a2-1bda3ed644c1"] {
   title,
   sections [] {
     _key,
@@ -66,6 +64,6 @@ const { data } = useSanityQuery(query);
 console.log(data);
 </script>
 
-<style>
 
+<style scoped>
 </style>

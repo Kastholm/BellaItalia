@@ -2,9 +2,6 @@
   <div class="container mx-auto mb-4 px-4 mt-20 hidden md:block ">
     <!-- Tab Headers -->
     <div class="text-center mb-10">
-      <h2 class="text-4xl font-bold uppercase text-gray-800 font-header after">
-        MenuKORT
-      </h2>
     </div>
 
     <div class="tabs flex justify-center rounded-t-md py-4 space-x-8 bg-[#f8f8bc]">
@@ -54,25 +51,22 @@
 
     <!-- Tab Content -->
     <div class="tab-content bg-white">
-      <MenukortForretter v-if="currentTab === 'Forretter'" />
-      <MenukortHovedretterBørn v-if="currentTab === 'Børn'" />
-      <MenukortHovedretterPasta v-if="currentTab === 'Pasta'" />
-      <MenukortHovedretterPizza v-if="currentTab === 'Pizza'" />
-      <MenukortDeserter v-if="currentTab === 'Desserter'" />
-      <MenukortHovedretter v-if="currentTab === 'Hovedretter'" />
+      <TakeawayHovedretterPizza v-if="currentTab === 'Pizza'" />
+      <TakeawayHovedretterPasta v-if="currentTab === 'Pasta'" />
+      <TakeawayHovedretter v-if="currentTab === 'Hovedretter'" />
+      <TakeawayForretter v-if="currentTab === 'Forretter'" />
+      <TakeawayHovedretterBørn v-if="currentTab === 'Børn'" />
+      <TakeawayDeserter v-if="currentTab === 'Desserter'" />
     </div>
   </div>
 
   <div class="tab-content bg-white block md:hidden ">
-    <div class="text-center mb-6 mt-12">
-      
-    </div>
-      <MenukortForretter />
-      <MenukortHovedretterPasta  />
-      <MenukortHovedretterPizza  />
-      <MenukortHovedretter  />
-      <MenukortHovedretterBørn  />
-      <MenukortDeserter  />
+      <TakeawayHovedretterPizza  />
+      <TakeawayHovedretterPasta  />
+      <TakeawayHovedretter  />
+      <TakeawayHovedretterBørn  />
+      <TakeawayForretter />
+      <TakeawayDeserter  />
     </div>
 </template>
 

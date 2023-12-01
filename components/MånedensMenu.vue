@@ -1,38 +1,36 @@
 <template>
-  <div class="m-auto">
+  <div class="m-auto" v-for="menu in data" :key="menu.title">
     <div class="text-center mb-10 mt-44">
-      <!-- <div
-        class="text-2xl font-semibold tracking-widest text-orange-400 uppercase "
-      >
-        Se vores
-      </div> -->
       <h2 class="text-4xl font-bold uppercase text-gray-800 font-header after">
-        Månedens Menu
+        {{ menu.title }}
       </h2>
     </div>
-    <div class="text-center">
+    <div
+      v-for="sections in menu.sections"
+      :key="sections._key"
+      class="text-center"
+    >
       <div class="mb-8">
-        <h3 class="text-2xl font-semibold mb-3">Forret:</h3>
-        <p class="text-xl">Penne al salmone</p>
+        <h3 class="text-2xl font-semibold mb-3">{{ sections.sectionName }}:</h3>
+        <p class="text-xl">{{ sections.dishes[0].name }}</p>
         <p class="text-gray-700">
-          Penne med laks, spinat, løg, i tomatflødesovs og parmesanost.
+          {{ sections.dishes[0].description }}
         </p>
       </div>
-      <div class="">
-        <h3 class="text-2xl font-semibold mb-3">Hovedret:</h3>
-        <p class="text-xl">Filetto al Madagascar</p>
-        <p class="text-gray-700">
-          Oksemørbrad med Madagascar peber og whisky i tomatflødesovs. Serveres
-          med bagt kartoffel og tilbehør.
-        </p>
-      </div>
-      <div class="price mt-10 text-3xl font-semibold">289,-</div>
+    </div>
+    <div class="price mt-10 text-3xl text-center font-semibold">
+      {{ menu.number }},-
     </div>
   </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+const query = groq`*[_id == "724ba3aa-acb8-45b2-9450-35a017cedf37"]`;
+
+const sanity = useSanity();
+const { data } = useSanityQuery(query);
+
+console.log("MD M EEUENEUENU", data.value);
 </script>
 
 <style>

@@ -12,6 +12,7 @@ export default {
        {
          name: 'sections',
          title: 'Sektioner',
+         description: 'Klik på en ret for at redigere i dens informationer, klik publish nede i højre hjørne',
          type: 'array',
          of: [{ type: 'menuItem' }] 
        }

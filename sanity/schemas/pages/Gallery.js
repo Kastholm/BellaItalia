@@ -9,13 +9,13 @@ export default {
       name: 'title',
       type: 'string',
       title: 'Title',
-      description: 'Title of the gallery page',
+      description: 'Overskrift',
     },
     {
       name: 'content',
       type: 'galleryObject',
       title: 'Gallery Content',
-      description: 'Add images to the gallery',
+      description: 'Tilføj billeder til Galleri',
     },
     // ... any other fields you want on your gallery page
   ],

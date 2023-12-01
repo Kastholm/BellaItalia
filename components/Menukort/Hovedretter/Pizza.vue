@@ -45,7 +45,7 @@
 
 
 <script setup>
-const query = groq`*[_type == "menu" && title == "Pizza"]`;
+const query = groq`*[_type == "menu" && _id == "105651eb-546a-4f25-a9b0-5992877126b6"]`;
 
 const sanity = useSanity();
 const { data } = useSanityQuery(query);

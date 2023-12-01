@@ -5,15 +5,17 @@
         <li><NuxtLink to="/">Forside</NuxtLink></li>
         <li><NuxtLink to="/Menukort">Menukort</NuxtLink></li>
         <li><NuxtLink to="/Takeaway">Take Away</NuxtLink></li>
-        <div class="logo-bg"
-          ><img class="logo" src="/img/logo.png" alt=""
-        /></div>
+        <div class="logo-bg">
+          <NuxtLink id="noborder" to="/">
+            <img class="logo" src="/img/logo.png" alt="" />
+          </NuxtLink>
+        </div>
         <li><NuxtLink to="/galleri"> Galleri</NuxtLink></li>
         <li><NuxtLink to="/kontakt">Kontakt Os</NuxtLink></li>
         <li><NuxtLink to="/omos"> Om os</NuxtLink></li>
       </ul>
     </nav>
-    <nav class="phoneNav"> </nav>
+    <nav class="phoneNav"></nav>
   </header>
   <phone-nav />
 </template>
@@ -55,6 +57,12 @@
 .router-link-active::before {
   width: 100%;
 }
+
+#noborder::before,
+#noborder::after {
+  content: "" !important;
+  opacity: 0 !important;
+}
 select,
 select option {
   background: none !important;
@@ -64,7 +72,7 @@ select option {
   background-color: rgb(34, 34, 34);
 }
 .mainNav .logo {
-  @apply  h-[8em];
+  @apply h-[8em];
 }
 .mainNav ul {
   @apply flex justify-center  h-20 overflow-visible;

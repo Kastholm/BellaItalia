@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto mb-4 px-4 mt-20 hidden md:block ">
+  <div class="container mx-auto mb-4 px-4  hidden md:block ">
     <!-- Tab Headers -->
     <div class="text-center mb-10">
       <h2 class="text-4xl font-bold uppercase text-gray-800 font-header after">

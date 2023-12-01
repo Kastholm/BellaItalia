@@ -1,14 +1,14 @@
 <template>
   <div>
     <!-- Header -->
-    <main>
+    <main v-if="data">
       <header>
         <!-- Hero section -->
         <div class="relative isolate overflow-hidden bg-gray-900">
           <img
-            src="/img/forside/banner.jpg"
-            alt=""
-            class="absolute inset-0 -z-20 h-full w-full object-cover"
+            :src="data[0].image1.url"
+            :alt="data[0].image1.caption"
+            class="absolute inset-0 -z-20 h-full w-full object-cover image1"
           />
           <div class="m-auto max-w-7xl px-6 lg:px-8">
             <div class="m-auto">
@@ -20,16 +20,19 @@
                   class="text-4xl text-[#fbfbfb] mt-12 tracking-tight max-w-[45rem] sm:text-6xl font-header after"
                   style="text-shadow: 15px 15px 15px #000000"
                 >
-                  Traditionel Italiensk Cuisine siden 1989
+                  {{ data[0].title }}
                 </h1>
                 <p
                   class="my-6 m-auto text-xl font-sans font-semibold leading-8 text-white md:w-[700px]"
                   style="text-shadow: 5px 5px 5px #000000"
                 >
-                  Hos Bella Italia har vi siden 1989 skabt autentisk Italiesk
-                  Cuisine i hjertet af Kolding By. Kom ind og spis Ala Carte
-                  eller bestil Take-away.
+                  {{ data[0].description[0].text }}
                 </p>
+                <!-- <SanityBlocks
+                    :blocks="data[0].description[0].text"
+                    :serializers="serializers"
+                  /> -->
+
                 <NuxtLink to="/kontakt">
                   <BaseButton> Kontakt os </BaseButton>
                 </NuxtLink>
@@ -39,8 +42,23 @@
         </div>
       </header>
 
+      <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-1 mt-1">
+        <div
+          class="image2 relative z-0 bg-bottom"
+          :style="{ backgroundImage: 'url(' + data[0].image2.url + ')' }"
+        ></div>
+
+        <div
+          class="image3 relative z-0 "
+          :style="{ backgroundImage: 'url(' + data[0].image3.url + ')' }"
+        ></div>
+      </div> -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-1 mt-1">
-        <div alt="" class="bgimg relative z-0 bg-bottom">
+        <div
+          alt=""
+          class="bgimg2 bg-cover relative z-0"
+          :style="{ backgroundImage: 'url(' + data[0].image2.url + ')' }"
+        >
           <div
             class="grid place-content-center gap-4 text-center h-[20vh] md:h-[30vh] max-h-[400px]"
           >
@@ -52,7 +70,11 @@
           </div>
         </div>
 
-        <div alt="" class="bgimg2 relative z-0">
+        <div
+          alt=""
+          class="bgimg2 bg-cover relative z-0"
+          :style="{ backgroundImage: 'url(' + data[0].image3.url + ')' }"
+        >
           <div
             class="grid place-content-center text-center gap-4 h-[20vh] md:h-[30vh] max-h-[400px]"
           >
@@ -67,30 +89,7 @@
     </main>
     <!-- Feature section -->
     <div class="mt-24">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-32">
-        <div class="mx-auto max-w-2xl sm:text-center">
-          <h2
-            class="text-base max-w-[160px] m-auto font-semibold leading-7 text-[#42934d]"
-          >
-            Ægte Italiensk Cuisine
-            <div class="after ml-1 mt-1"></div>
-          </h2>
-          <p
-            class="mt-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl font-header"
-          >
-            Altid hjemmelavet anti pasti
-          </p>
-          <p class="mt-6 text-lg leading-8 text-gray-600">
-            Bella Italia er blandt (hvis ikke) den eneste restaurant i Kolding,
-            der stadig har samme ejer og samme menukort siden 1989. Bella Italia
-            er drevet og ejet af Rosario Castorina. Personalet er stort set
-            stadig det samme som i begyndelsen, men selvfølgelig har der været
-            et par udskiftninger i staben. Vi byder alle vores gæster der kigger
-            forbi siden, velkommen og håber at i får en god oplevelse. Caio, og
-            vi ses igen på BELLA ITALIA
-          </p>
-        </div>
-      </div>
+      <omos />
     </div>
   </div>
 </template>
@@ -113,116 +112,37 @@
   );
 }
 
-.bgimg {
-  background-image: url("https://i.ibb.co/QdpBdgd/recipe-pappardelle-1.webp");
-  background-size: cover;
-}
-
-.bgimg2 {
-  background-image: url("https://i.ibb.co/G9NGdLz/7f71fcc474fcf74c620f23d6c559fc43-1.webp");
+.image2,
+.image3 {
   background-size: cover;
 }
 </style>
 
 <script setup>
-import { ref } from "vue";
-import {
-  Dialog,
-  DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-} from "@headlessui/vue";
-import {
-  Bars3Icon,
-  MinusSmallIcon,
-  PlusSmallIcon,
-  XMarkIcon,
-} from "@heroicons/vue/24/outline";
-import {
-  ArrowPathIcon,
-  CheckIcon,
-  CloudArrowUpIcon,
-  Cog6ToothIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/vue/20/solid";
+const query = groq`*[_id == "65a453e2-3815-44dc-be3b-c97f878dfb22"] {
+  title,
+  "description": description[0].children[] {
+    "text": text,
+    "marks": marks
+  },
+  "image1": {
+    "url": image1.asset->url,
+    "caption": image1.caption
+  },
+  "image2": {
+    "url": image2.asset->url,
+    "caption": image2.caption
+  },
+  "image3": {
+    "url": image3.asset->url,
+    "caption": image3.caption
+  }
+}`;
 
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
-];
-
-const tiers = [
-  {
-    name: "Hobby",
-    id: "tier-hobby",
-    href: "#",
-    priceMonthly: "$19",
-    description:
-      "The perfect plan if you're just getting started with our product.",
-    features: [
-      "25 products",
-      "Up to 10,000 subscribers",
-      "Advanced analytics",
-      "24-hour support response time",
-    ],
-    featured: false,
-  },
-  {
-    name: "Enterprise",
-    id: "tier-enterprise",
-    href: "#",
-    priceMonthly: "$49",
-    description: "Dedicated support and infrastructure for your company.",
-    features: [
-      "Unlimited products",
-      "Unlimited subscribers",
-      "Advanced analytics",
-      "Dedicated support representative",
-      "Marketing automations",
-      "Custom integrations",
-    ],
-    featured: true,
-  },
-];
-const faqs = [
-  {
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  // More questions...
-];
-const footerNavigation = {
-  solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
-  ],
-  support: [
-    { name: "Pricing", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-    { name: "API Status", href: "#" },
-  ],
-  company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Partners", href: "#" },
-  ],
-  legal: [
-    { name: "Claim", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
-  ],
-};
+const sanity = useSanity();
+const { data } = useSanityQuery(query);
+import { SanityBlocks } from "sanity-blocks-vue-component";
+console.log(data);
 
 const mobileMenuOpen = ref(false);
 </script>

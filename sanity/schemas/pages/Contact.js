@@ -1,6 +1,6 @@
 export default {
      name: 'contactInfo',
-     title: 'Contact Information',
+     title: 'Kontakt Information',
      type: 'document',
      fields: [
        {

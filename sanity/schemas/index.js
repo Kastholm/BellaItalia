@@ -13,5 +13,7 @@ import gallery from './pages/Gallery'
 import contact from './pages/Contact'
 import monthMenu from './pages/Månedensmenu'
 import Drikkekort from './pages/Drikkekort';
+import Forside from './pages/Forside';
+import omos from './pages/omos';
 
-export const schemaTypes = [post, author, category, galleryObejct, gallery, contact, menu, menuItem, menuSection, monthMenu, monthMenuSection, monthMenuItem, blockContent, Drikkekort]
+export const schemaTypes = [ Forside, galleryObejct, gallery, contact, menu, menuItem, menuSection, monthMenu, monthMenuSection, monthMenuItem, blockContent, Drikkekort, omos]

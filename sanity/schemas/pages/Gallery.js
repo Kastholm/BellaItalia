@@ -3,7 +3,7 @@
 export default {
   name: 'gallery',
   type: 'document',
-  title: 'Galleri Hjemmeside',
+  title: 'Galleri',
   fields: [
     {
       name: 'title',

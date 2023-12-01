@@ -58,7 +58,7 @@
           <div>
             <p class="font-medium">Take Away</p>
             <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-              <NuxtLink class="hover:opacity-75" > Bestil nu </NuxtLink>
+              <NuxtLink to="/takeaway" class="hover:opacity-75" > Bestil nu </NuxtLink>
             </nav>
           </div>
           <div>

@@ -9,68 +9,69 @@
 
     <div class="tabs flex justify-center mb-4 space-x-8">
       <button
-        v-for="tab in tabs"
-        :key="tab"
-        :class="tab === currentTab ? 'tab-active' : 'tab-inactive'"
-        @click="switchTab(tab)"
+        class="font-medium text-center transition duration-300"
+        :class="currentTab === 'Forretter' ? 'tab-active' : 'tab-inactive'"
+        @click="currentTab = 'Forretter'"
+      >
+        <span class="text-gray-600 text-lg">Forretter</span>
+      </button>
+      <button
+        :class="currentTab === 'Pasta' ? 'tab-active' : 'tab-inactive'"
+        @click="currentTab = 'Pasta'"
         class="font-medium text-center transition duration-300"
       >
-        <i :class="`icon-${tab.toLowerCase()}`"></i>
-        <span class="text-gray-600 text-lg">{{ tab }}</span>
+        <span class="text-gray-600 text-lg">Pasta</span>
+      </button>
+      <button
+        :class="currentTab === 'Pizza' ? 'tab-active' : 'tab-inactive'"
+        @click="currentTab = 'Pizza'"
+        class="font-medium text-center transition duration-300"
+      >
+        <span class="text-gray-600 text-lg">Pizza</span>
+      </button>
+      <button
+        :class="currentTab === 'Hovedretter' ? 'tab-active' : 'tab-inactive'"
+        @click="currentTab = 'Hovedretter'"
+        class="font-medium text-center transition duration-300"
+      >
+        <span class="text-gray-600 text-lg">Hovedretter</span>
+      </button>
+      <button
+        :class="currentTab === 'Børn' ? 'tab-active' : 'tab-inactive'"
+        @click="currentTab = 'Børn'"
+        class="font-medium text-center transition duration-300"
+      >
+        <span class="text-gray-600 text-lg">Til de små</span>
+      </button>
+      <button
+        :class="currentTab === 'Desserter' ? 'tab-active' : 'tab-inactive'"
+        @click="currentTab = 'Desserter'"
+        class="font-medium text-center transition duration-300"
+      >
+        <span class="text-gray-600 text-lg">Desserter</span>
       </button>
     </div>
 
     <!-- Tab Content -->
     <div class="tab-content">
-      <!-- <div v-if="currentTab === 'Forretter'">
-        <h2 class="text-2xl">Ekstra Brød og smør 8,-</h2>
-        <MenukortForretter />
-      </div>
-      <div v-if="currentTab === 'Til de små'">
-        <MenukortHovedretterBørn />
-      </div>
-      <div v-if="currentTab === 'Pasta'">
-        <MenukortHovedretterPasta />
-      </div>
-       -->
-      <div v-if="currentTab === 'Pizza'">
-        <MenukortHovedretterPizza :selected-menu="selectedMenus['Pizza']" />
-      </div>
-      <div v-if="currentTab === 'Hovedretter'">
-        <MenukortHovedretter :selected-menu="selectedMenus['Hovedretter']" />
-      </div>
-      <!-- <div v-if="currentTab === 'Desert'">
-        <MenukortDeserter />
-      </div> -->
+      <!-- <h2 class="text-2xl">Ekstra Brød og smør 8,-</h2> -->
+      <MenukortForretter v-if="currentTab === 'Forretter'" />
+
+      <MenukortHovedretterBørn v-if="currentTab === 'Børn'" />
+
+      <MenukortHovedretterPasta v-if="currentTab === 'Pasta'" />
+
+      <MenukortHovedretterPizza v-if="currentTab === 'Pizza'" />
+
+      <MenukortHovedretter v-if="currentTab === 'Hovedretter'" />
+
+      <MenukortDeserter v-if="currentTab === 'Dessert'" />
     </div>
   </div>
 </template>
 
 <script setup>
-const tabs = [
-  "Forretter",
-  "Pasta",
-  "Pizza",
-  "Hovedretter",
-  "Til de små",
-  "Desert",
-];
-const currentTab = ref(tabs[0]);
-
-const selectedMenus = ref({});
-
-tabs.forEach((tab) => {
-  selectedMenus.value[tab] = false;
-});
-
-function switchTab(tab) {
-  currentTab.value = tab;
-
-  for (const key in selectedMenus.value) {
-    selectedMenus.value[key] = false;
-  }
-  selectedMenus.value[tab] = true;
-}
+let currentTab = ref("Forretter");
 </script>
 
 <style scoped>

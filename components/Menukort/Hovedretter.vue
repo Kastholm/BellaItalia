@@ -1,6 +1,5 @@
 <template>
   <div
-    v-if="props.selectedMenu"
     class="bg-red-200 shadow-md rounded-lg overflow-hidden"
   >
     <div
@@ -65,11 +64,7 @@ const { data } = await useAsyncData("menu", () => sanity.fetch(query));
 
 console.log(data);
 
-console.log("Hovedrettititi");
 
-const props = defineProps({
-  selectedMenu: Boolean
-});
 </script>
 
 <style scoped>

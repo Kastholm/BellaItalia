@@ -46,7 +46,7 @@
 
 
 <script setup>
-const query = groq`*[_type == "menu" && (_id == "04d4ca6d-3278-4b7a-a84b-3b405090d78f")] {
+const query = groq`*[_type == "menu" && (_id == "drafts.42802967-55d6-425a-b471-edd2064aad1b")] {
   title,
   sections [] {
     _key,

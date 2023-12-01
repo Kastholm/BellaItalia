@@ -8,6 +8,11 @@
       :key="børneret.title"
       class="menu-section max-w-8xl mx-auto p-4"
     >
+    <h1
+          class="text-4xl text-center font-bold uppercase text-gray-800 font-header after mb-12"
+        >
+          {{ børneret.title }}
+        </h1>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div
           class="menu-item flex"

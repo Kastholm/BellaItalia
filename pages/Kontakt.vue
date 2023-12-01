@@ -40,7 +40,9 @@
               />
             </svg>
           </div>
-          <h2 class="text-4xl font-bold font-header tracking-tight text-gray-900">
+          <h2
+            class="text-4xl font-bold font-header tracking-tight text-gray-900"
+          >
             {{ contactInfo.title }}
           </h2>
 
@@ -61,9 +63,11 @@
                 <PhoneIcon class="h-7 w-6 text-gray-400" aria-hidden="true" />
               </dt>
               <dd>
-                <NuxtLink class="hover:text-gray-900" to="tel:+1 (555) 234-5678">{{
-                  contactInfo.phoneNumber
-                }}</NuxtLink>
+                <NuxtLink
+                  class="hover:text-gray-900"
+                  to="tel:+1 (555) 234-5678"
+                  >{{ contactInfo.phoneNumber }}</NuxtLink
+                >
               </dd>
             </div>
             <!--  <div class="flex gap-x-4">
@@ -141,7 +145,7 @@ onMounted(() => {
     map.value?.remove();
   });
 
-const query = groq`{ "kontaktinfo": *[_type == "contactInfo"] }`;
+const query = groq`{ "kontaktinfo": *[_id == "a15a7174-2598-432a-8b1f-d549749b3667"] }`;
 const sanity = useSanity();
 const { data } = await useAsyncData("kontaktinfo", () => sanity.fetch(query));
 </script>
@@ -166,6 +170,6 @@ const { data } = await useAsyncData("kontaktinfo", () => sanity.fetch(query));
   font-weight: 600;
   color: #1b1a1a;
   margin-bottom: 0.5rem;
-  @apply font-header
+  @apply font-header;
 }
 </style>

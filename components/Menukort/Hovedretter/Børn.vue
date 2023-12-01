@@ -1,14 +1,17 @@
 <template>
-  <div class="bg-red-200 shadow-md rounded-lg overflow-hidden">
+  <div v-if="!data" class="flex justify-center items-center">
+    <div class="loader"></div>
+  </div>
+  <div v-else class="bg-red-200 shadow-md rounded-lg overflow-hidden">
     <div
-      v-for="menuPunkt in data"
-      :key="menuPunkt.title"
+      v-for="børneret in data"
+      :key="børneret.title"
       class="menu-section max-w-8xl mx-auto p-4"
     >
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div
           class="menu-item flex"
-          v-for="item in menuPunkt.sections"
+          v-for="item in børneret.sections"
           :key="item._key"
         >
           <div
@@ -48,10 +51,9 @@ const query = groq`*[_type == "menu" && (_id == "83f3a8bf-a5aa-48f6-8101-49d56b7
 }`;
 
 const sanity = useSanity();
-const { data } = await useAsyncData("menu", () => sanity.fetch(query));
+const { data } = useSanityQuery(query);
 
 console.log(data);
-
 </script>
 
 <style scoped>

@@ -1,21 +1,22 @@
 <template>
-  <div
-    class="bg-red-200 shadow-md rounded-lg overflow-hidden"
-  >
+  <div v-if="!data" class="flex justify-center items-center">
+    <div class="loader"></div>
+  </div>
+  <div v-else class="bg-red-200 shadow-md rounded-lg overflow-hidden">
     <div
-      v-for="menuPunkt in data"
-      :key="menuPunkt.title"
+      v-for="hovedret in data"
+      :key="hovedret.title"
       class="menu-section max-w-8xl mx-auto p-4"
     >
       <h1
         class="text-4xl text-center font-bold uppercase text-gray-800 font-header after mb-12"
       >
-        {{ menuPunkt.title }}
+        {{ hovedret.title }}
       </h1>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div
           class="menu-item flex"
-          v-for="item in menuPunkt.sections"
+          v-for="item in hovedret.sections"
           :key="item._key"
         >
           <div
@@ -42,11 +43,6 @@
 </template>
 
 <script setup>
-
-
-
-
-
 const query = groq`*[_type == "menu" && (_id == "23f064d7-a78c-48ec-b49a-4be51b9f0301" || _id == "11810eff-96a7-42bb-85e0-134214d20874" || _id == "4db37b30-85da-4f3c-a91d-d9e75b1d8db5" || _id == "76a1ae56-db97-4fd6-8686-9b4a5bd79cc6")] {
   title,
   sections [] {
@@ -60,11 +56,9 @@ const query = groq`*[_type == "menu" && (_id == "23f064d7-a78c-48ec-b49a-4be51b9
 }`;
 
 const sanity = useSanity();
-const { data } = await useAsyncData("menu", () => sanity.fetch(query));
+const { data } = useSanityQuery(query);
 
 console.log(data);
-
-
 </script>
 
 <style scoped>

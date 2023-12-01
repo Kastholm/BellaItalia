@@ -54,18 +54,12 @@
 
     <!-- Tab Content -->
     <div class="tab-content">
-      <!-- <h2 class="text-2xl">Ekstra Brød og smør 8,-</h2> -->
       <MenukortForretter v-if="currentTab === 'Forretter'" />
-
       <MenukortHovedretterBørn v-if="currentTab === 'Børn'" />
-
       <MenukortHovedretterPasta v-if="currentTab === 'Pasta'" />
-
       <MenukortHovedretterPizza v-if="currentTab === 'Pizza'" />
-
+      <MenukortDeserter v-if="currentTab === 'Desserter'" />
       <MenukortHovedretter v-if="currentTab === 'Hovedretter'" />
-
-      <MenukortDeserter v-if="currentTab === 'Dessert'" />
     </div>
   </div>
 </template>

@@ -6,12 +6,13 @@
         MenuKORT
       </h2>
     </div>
+
     <div class="tabs flex justify-center mb-4 space-x-8">
       <button
         v-for="tab in tabs"
         :key="tab"
         :class="tab === currentTab ? 'tab-active' : 'tab-inactive'"
-        @click="currentTab = tab"
+        @click="switchTab(tab)"
         class="font-medium text-center transition duration-300"
       >
         <i :class="`icon-${tab.toLowerCase()}`"></i>
@@ -21,7 +22,7 @@
 
     <!-- Tab Content -->
     <div class="tab-content">
-      <div v-if="currentTab === 'Forretter'">
+      <!-- <div v-if="currentTab === 'Forretter'">
         <h2 class="text-2xl">Ekstra Brød og smør 8,-</h2>
         <MenukortForretter />
       </div>
@@ -31,15 +32,16 @@
       <div v-if="currentTab === 'Pasta'">
         <MenukortHovedretterPasta />
       </div>
+       -->
       <div v-if="currentTab === 'Pizza'">
-        <MenukortHovedretterPizza />
+        <MenukortHovedretterPizza :selected-menu="selectedMenus['Pizza']" />
       </div>
       <div v-if="currentTab === 'Hovedretter'">
-        <MenukortHovedretter />
+        <MenukortHovedretter :selected-menu="selectedMenus['Hovedretter']" />
       </div>
-      <div v-if="currentTab === 'Desert'">
+      <!-- <div v-if="currentTab === 'Desert'">
         <MenukortDeserter />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -54,6 +56,21 @@ const tabs = [
   "Desert",
 ];
 const currentTab = ref(tabs[0]);
+
+const selectedMenus = ref({});
+
+tabs.forEach((tab) => {
+  selectedMenus.value[tab] = false;
+});
+
+function switchTab(tab) {
+  currentTab.value = tab;
+
+  for (const key in selectedMenus.value) {
+    selectedMenus.value[key] = false;
+  }
+  selectedMenus.value[tab] = true;
+}
 </script>
 
 <style scoped>

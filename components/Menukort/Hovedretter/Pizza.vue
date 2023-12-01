@@ -1,5 +1,8 @@
 <template>
-   <div class="bg-red-200 shadow-md rounded-lg overflow-hidden">
+  <div
+    v-if="props.selectedMenu"
+    class="bg-red-200 shadow-md rounded-lg overflow-hidden"
+  >
     <div
       v-for="menuPunkt in data"
       :key="menuPunkt.title"
@@ -41,6 +44,9 @@
 
 
 <script setup>
+
+
+
 const query = groq`*[_type == "menu" && (_id == "105651eb-546a-4f25-a9b0-5992877126b6")] {
   title,
   sections [] {
@@ -58,4 +64,9 @@ const { data } = await useAsyncData("menu", () => sanity.fetch(query));
 
 console.log(data);
 
+console.log("Pizzatitititi");
+
+const props = defineProps({
+  selectedMenu: Boolean
+});
 </script>

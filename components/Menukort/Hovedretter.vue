@@ -1,5 +1,8 @@
 <template>
-  <div class="bg-red-200 shadow-md rounded-lg overflow-hidden">
+  <div
+    v-if="props.selectedMenu"
+    class="bg-red-200 shadow-md rounded-lg overflow-hidden"
+  >
     <div
       v-for="menuPunkt in data"
       :key="menuPunkt.title"
@@ -40,6 +43,11 @@
 </template>
 
 <script setup>
+
+
+
+
+
 const query = groq`*[_type == "menu" && (_id == "23f064d7-a78c-48ec-b49a-4be51b9f0301" || _id == "11810eff-96a7-42bb-85e0-134214d20874" || _id == "4db37b30-85da-4f3c-a91d-d9e75b1d8db5" || _id == "76a1ae56-db97-4fd6-8686-9b4a5bd79cc6")] {
   title,
   sections [] {
@@ -57,9 +65,12 @@ const { data } = await useAsyncData("menu", () => sanity.fetch(query));
 
 console.log(data);
 
+console.log("Hovedrettititi");
+
+const props = defineProps({
+  selectedMenu: Boolean
+});
 </script>
 
 <style scoped>
-
-
 </style>

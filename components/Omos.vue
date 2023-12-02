@@ -1,5 +1,5 @@
 <template>
-  <div v-for="omos in data.kontaktinfo" :key="omos._id" class="mt-24">
+  <div v-for="omos in data.omosinfo" :key="omos._id" class="mt-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-32">
       <div class="mx-auto max-w-2xl sm:text-center">
         <h2
@@ -37,9 +37,9 @@
 
 
 <script setup>
-const query = groq`{ "kontaktinfo": *[_type == "omos"] }`;
+const query = groq`{ "omosinfo": *[_id == "58e1003f-3f06-4940-841b-734ad1ff4fee"] }`;
 const sanity = useSanity();
-const { data } = await useAsyncData("kontaktinfo", () => sanity.fetch(query));
+const { data } = await useAsyncData("omosinfo", () => sanity.fetch(query));
 import { SanityBlocks } from "sanity-blocks-vue-component";
 console.log("om osss", data);
 </script>

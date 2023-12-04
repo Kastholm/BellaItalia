@@ -12,6 +12,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fbfbfb;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .after::after {

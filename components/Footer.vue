@@ -1,6 +1,8 @@
 <template>
   <!-- component -->
-  <footer class="bg-gradient-to-r from-gray-100 via-[#fff7da82] to-gray-100">
+  <footer
+    class="bg-gradient-to-r from-gray-100 via-[#fff7da82] to-gray-100 relative"
+  >
     <div class="max-w-screen-xl px-4 pt-16 mx-auto sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div>
@@ -22,7 +24,7 @@
                   d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
                   clipRule="evenodd"
                 />
-              </svg> 
+              </svg>
             </a>
             <!-- <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
               <span class="sr-only"> Instagram </span>
@@ -47,27 +49,27 @@
           <div>
             <p class="font-medium">Genveje</p>
             <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-              <NuxtLink to="/galleri" class="hover:opacity-75" >
+              <NuxtLink to="/galleri" class="hover:opacity-75">
                 Galleri
               </NuxtLink>
-              <NuxtLink to="/omos" class="hover:opacity-75" >
-                Om os
-              </NuxtLink>
+              <NuxtLink to="/omos" class="hover:opacity-75"> Om os </NuxtLink>
             </nav>
           </div>
           <div>
             <p class="font-medium">Take Away</p>
             <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-              <NuxtLink to="/takeaway" class="hover:opacity-75" > Bestil nu </NuxtLink>
+              <NuxtLink to="/takeaway" class="hover:opacity-75">
+                Bestil nu
+              </NuxtLink>
             </nav>
           </div>
           <div>
             <p class="font-medium">Vores Menu</p>
             <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-              <NuxtLink to="menukort" class="hover:opacity-75" >
+              <NuxtLink to="menukort" class="hover:opacity-75">
                 Menukort
               </NuxtLink>
-              <NuxtLink to="menukort" class="hover:opacity-75" >
+              <NuxtLink to="menukort" class="hover:opacity-75">
                 Månedens Menu
               </NuxtLink>
             </nav>
@@ -75,22 +77,28 @@
           <div>
             <p class="font-medium">Kontakt os</p>
             <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-              <a class="hover:opacity-75" > +45 75 50 58 07 </a>
-              <a class="hover:opacity-75" > Jernbanegade 40 </a>
-              <a class="hover:opacity-75" > 6000 Kolding </a>
+              <a class="hover:opacity-75"> +45 75 50 58 07 </a>
+              <a class="hover:opacity-75"> Jernbanegade 40 </a>
+              <a class="hover:opacity-75"> 6000 Kolding </a>
             </nav>
           </div>
         </div>
       </div>
-      <p class=" text-center pb-2 text-xs text-gray-800">
-        Designet 2023 <NuxtLink to="https://www.webtify.dk">@Webtify.dk</NuxtLink>
+      <p class="text-center pb-2 text-xs text-gray-800">
+        Designet 2023
+        <NuxtLink to="https://www.webtify.dk">@Webtify.dk</NuxtLink>
       </p>
     </div>
+    <NuxtLink to="https://bellaitalia.sanity.studio/">
+      <div class="absolute right-0 bottom-0">
+        <InformationCircleIcon class="h-8 w-8" aria-hidden="true" />
+      </div>
+    </NuxtLink>
   </footer>
 </template>
 
-<script>
-export default {};
+<script setup>
+import { InformationCircleIcon } from "@heroicons/vue/24/outline";
 </script>
 
 <style>

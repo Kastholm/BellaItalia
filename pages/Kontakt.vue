@@ -70,7 +70,7 @@
                 >
               </dd>
             </div>
-             <div class="flex gap-x-4">
+            <div class="flex gap-x-4">
               <dt class="flex-none">
                 <span class="sr-only">Telephone</span>
                 <EnvelopeIcon
@@ -79,9 +79,9 @@
                 />
               </dt>
               <dd>
-                <a class="hover:text-gray-900" :href="contactInfo.mail"
-                  >{{ contactInfo.mail }}</a
-                >
+                <a class="hover:text-gray-900" :href="contactInfo.mail">{{
+                  contactInfo.mail
+                }}</a>
               </dd>
             </div>
           </dl>
@@ -160,7 +160,6 @@ const { data } = await useAsyncData("kontaktinfo", () => sanity.fetch(query));
 
 .map {
   position: relative;
-  margin-left: 4em;
   max-width: 500px;
   height: 500px;
 }

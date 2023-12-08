@@ -10,7 +10,21 @@
             MenuKORT
           </h2>
       <div class="stickyHeader sticky top-0">
-
+<div
+          class=" z-[999px]  hidden xl:inline-block lg:absolute -top-48  p-4 bg-white max-w-[30em] border-l-2 border-t-2 border-gray-200 shadow-lg"
+        >
+          <h3 class="text-md font-semibold text-gray-700 mb-2">
+           <b> Vedrørende Allergier</b> bedes i rette henvendelse til personalet eller pr.
+            tlf før ankomst.
+          </h3>
+          <h3 class="text-md font-semibold text-gray-700 mb-2">
+            Vi tilbyder desværre ikke glutenfri pizza og pasta.
+          </h3>
+          <h3 class="text-md font-semibold text-gray-700">
+            Vi tilbyder vegetariske retter i vores menukort ellers er det muligt
+            at tilføje/fjerne ingredienser på diverse retter.
+          </h3>
+        </div>
         <div
           class="tabs mb-12 flex justify-center rounded-t-md py-2 bg-[#093511]"
         >
@@ -86,7 +100,7 @@
   </div>
 
   <div class="tab-content bg-white block md:hidden">
-    <div class="text-center mb-6 mt-12"></div>
+     
     <MenukortForretter />
     <MenukortHovedretterPasta />
     <MenukortHovedretterPizza />

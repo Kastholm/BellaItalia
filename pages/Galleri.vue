@@ -1,10 +1,6 @@
 <template>
   <div class="text-center mb-10 mt-44">
-    <div
-      class="text-2xl font-semibold tracking-widest text-orange-400 uppercase"
-    >
-      Se Vores
-    </div>
+    
     <h2 class="text-4xl font-bold uppercase text-gray-800 font-header after">
       Galleri
     </h2>

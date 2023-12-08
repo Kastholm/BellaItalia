@@ -76,10 +76,18 @@
           </div>
           <div>
             <p class="font-medium">Kontakt os</p>
-            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-              <a class="hover:opacity-75"> +45 75 50 58 07 </a>
-              <a class="hover:opacity-75"> Jernbanegade 40 </a>
-              <a class="hover:opacity-75"> 6000 Kolding </a>
+            <nav
+              v-if="data"
+              class="flex flex-col mt-4 space-y-2 text-sm text-gray-500"
+            >
+              <a class="hover:opacity-75">
+                {{ data.kontaktinfo[0].phoneNumber }}
+              </a>
+              <a class="hover:opacity-75"> {{ data.kontaktinfo[0].mail }} </a>
+              <a class="hover:opacity-75">
+                {{ data.kontaktinfo[0].address }}
+              </a>
+              <a class="hover:opacity-75"> {{ data.kontaktinfo[0].city }}</a>
             </nav>
           </div>
         </div>
@@ -99,6 +107,12 @@
 
 <script setup>
 import { InformationCircleIcon } from "@heroicons/vue/24/outline";
+
+const query = groq`{ "kontaktinfo": *[_id == "a15a7174-2598-432a-8b1f-d549749b3667"] }`;
+const sanity = useSanity();
+const { data } = await useAsyncData("kontaktinfo", () => sanity.fetch(query));
+
+console.log("footer", data);
 </script>
 
 <style>

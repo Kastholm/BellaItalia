@@ -70,7 +70,7 @@
                 >
               </dd>
             </div>
-            <!--  <div class="flex gap-x-4">
+             <div class="flex gap-x-4">
               <dt class="flex-none">
                 <span class="sr-only">Telephone</span>
                 <EnvelopeIcon
@@ -79,11 +79,11 @@
                 />
               </dt>
               <dd>
-                <a class="hover:text-gray-900" href="mailto:hello@example.com"
-                  >hello@example.com</a
+                <a class="hover:text-gray-900" :href="contactInfo.mail"
+                  >{{ contactInfo.mail }}</a
                 >
               </dd>
-            </div> -->
+            </div>
           </dl>
           <div class="blocks mt-6 leading-8 text-gray-600">
             <SanityBlocks

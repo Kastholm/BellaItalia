@@ -20,6 +20,11 @@ export default {
          type: 'string'
        },
        {
+        name: 'mail',
+        title: 'E-mail',
+        type: 'string'
+      },
+       {
          name: 'city',
          title: 'By',
          type: 'string'

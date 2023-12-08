@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center mb-10 mt-44">
+  <div class="text-center mb-10 mt-32 md:mt-44">
     
   </div>
   <TakeawayMenuTabs />

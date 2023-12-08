@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-[#fbfbfb] mx-auto  mb-4 px-4 pt-20 hidden md:block relative z-50"
+    class="bg-[#fbfbfb] mx-auto  mb-4 px-4 pt-0 hidden md:block relative z-50"
   >
     <div class="container mx-auto">
       <!-- Tab Headers -->
@@ -10,10 +10,7 @@
       >
         Take Away
       </h2>
-      <div class="m-auto" >
-    <div class="text-center mb-10 ">
-      
-    </div>
+    
     <div
       
       class="text-center"
@@ -23,11 +20,11 @@
         <p class="text-xl mb-4">Med undtagelse af</p>
         <p class="text-xl mb-4"><b>Pizza</b> 38, 46, 67, 69, 42</p>
         <p class="text-xl mb-4"><b>Pasta</b> 37, 24, 26, 40, 38, 39</p>
-        <p class="text-xl mb-4 ">Alle andre retter har samme pris som menukortet.</p>
+        <p class="text-xl mb-4 ">Alle andre retter har <br> samme pris som menukortet.</p>
       </div>
     </div>
     
-  </div>
+  
 
       <div class="stickyHeader sticky top-0">
       <div
@@ -125,6 +122,25 @@
   </div>
 
   <div class="tab-content bg-white block md:hidden">
+     <h2
+        id="topHeader"
+        class="text-4xl mb-8 text-center font-bold uppercase text-gray-800 font-header after"
+      >
+        Take Away
+      </h2>
+    
+    <div
+      
+      class="text-center"
+    >
+      <div class="mb-8">
+        <p class="text-xl mb-2"><b>Pizza og Pasta til kun 80,- kr.</b></p>
+        <p class="text-xl mb-4">Med undtagelse af</p>
+        <p class="text-xl mb-4"><b>Pizza</b> 38, 46, 67, 69, 42</p>
+        <p class="text-xl mb-4"><b>Pasta</b> 37, 24, 26, 40, 38, 39</p>
+        <p class="text-xl mb-4 ">Alle andre retter har samme pris som menukortet.</p>
+      </div>
+    </div>
     <div
           class="   p-4 my-2 mb-10 bg-white max-w-[80vw] m-auto border-l-2 border-t-2 border-gray-200 shadow-lg"
         >

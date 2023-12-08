@@ -1,11 +1,11 @@
 <template>
-  <div class="text-center mb-10 mt-44">
+  <div class="text-center mb-10 mt-32 md:mt-44">
     
     <h2 class="text-4xl font-bold uppercase text-gray-800 font-header after">
       Galleri
     </h2>
   </div>
-  <div class="container">
+  <div class="containerr px-0 md:px-4">
     <div
       v-if="!data || data.length === 0"
       class="flex flex-wrap justify-center items-center h-screen"
@@ -15,7 +15,7 @@
 
     <div
       v-else
-      class="gallery w-4/4 p-4"
+      class="gallery  md:w-4/4 md:p-4"
       v-for="gallery in data"
       :key="gallery._id"
     >
@@ -24,7 +24,7 @@
         v-for="image in gallery.content.images"
         :key="image._key"
       >
-        <img class="gallery-image" :src="image.imageUrl" :alt="image.alt" />
+        <img class="gallery-image px-4 md:px-0" :src="image.imageUrl" :alt="image.alt" />
       </div>
     </div>
   </div>
@@ -51,10 +51,9 @@ const { data } = await useAsyncData("gallery", () => sanity.fetch(query));
 
 
 <style scoped>
-.container {
+.containerr {
   max-width: 100rem;
   margin: 0 auto;
-  padding: 0 2rem 2rem;
 }
 
 .heading {

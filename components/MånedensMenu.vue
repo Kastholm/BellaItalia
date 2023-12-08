@@ -1,6 +1,6 @@
 <template>
   <div class="m-auto" v-for="menu in data" :key="menu.title">
-    <div class="text-center mb-10 mt-44">
+    <div class="text-center mb-10 mt-32 md:mt-44">
       <h2 class="text-4xl font-bold uppercase text-gray-800 font-header after">
         {{ menu.title }}
       </h2>

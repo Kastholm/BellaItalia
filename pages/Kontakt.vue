@@ -1,5 +1,5 @@
 <template>
-  <div v-if="data" class="relative isolate bg-white">
+  <div v-if="data" class="relative isolate bg-white mt-20 md:mt-0">
     <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
       <div
         class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48"
@@ -161,7 +161,7 @@ const { data } = await useAsyncData("kontaktinfo", () => sanity.fetch(query));
 .map {
   position: relative;
   margin-left: 4em;
-  width: 500px;
+  max-width: 500px;
   height: 500px;
 }
 

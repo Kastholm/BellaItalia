@@ -159,7 +159,7 @@ const { data } = await useAsyncData("kontaktinfo", () => sanity.fetch(query));
 }
 
 .map {
-  position: relative;
+  position: relative ;
   max-width: 500px;
   height: 500px;
 }

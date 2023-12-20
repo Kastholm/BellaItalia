@@ -34,6 +34,7 @@
         </div>
       </div>
     </div>
+    <img src='https://www.findsmiley.dk/PublishingImages/mainSmiley.png' />
     <NuxtLink to="https://www.findsmiley.dk/70568">
                   <BaseButton> Se Smiley Ordning </BaseButton>
                 </NuxtLink>

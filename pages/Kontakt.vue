@@ -55,7 +55,10 @@
                   aria-hidden="true"
                 />
               </dt>
-              <dd>{{ contactInfo.address }}</dd>
+              <dd>
+                {{ contactInfo.address }} <br />
+                {{ contactInfo.city }} {{ contactInfo.postalCode }}
+              </dd>
             </div>
             <div class="flex gap-x-4">
               <dt class="flex-none">
@@ -159,7 +162,7 @@ const { data } = await useAsyncData("kontaktinfo", () => sanity.fetch(query));
 }
 
 .map {
-  position: relative ;
+  position: relative;
   max-width: 500px;
   height: 500px;
 }

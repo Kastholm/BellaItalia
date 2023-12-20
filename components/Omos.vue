@@ -1,7 +1,7 @@
 <template>
   <div v-if="data">
     <div v-for="omos in data.omosinfo" :key="omos._id" class="mt-24">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-6 ">
         <div class="mx-auto max-w-2xl sm:text-center">
           <h2
             class="text-base max-w-[160px] m-auto font-semibold leading-7 text-[#42934d]"
@@ -14,7 +14,7 @@
           >
             {{ omos.title }}
           </p>
-  
+
           <p class="mt-6 text-lg leading-8 text-gray-600">
             <SanityBlocks
               :blocks="omos.descriptiondk"
@@ -34,7 +34,12 @@
         </div>
       </div>
     </div>
-    
+    <div class="w-full grid place-content-center mb-12">
+      <NuxtLink to="https://www.findsmiley.dk/23498">
+        <img class="w-20 m-auto mb-6" :src="'/img/mainSmiley.png'" alt="" />
+        <BaseButton class="w-fit px-6 scale-90"> Se Smiley Ordning </BaseButton>
+      </NuxtLink>
+    </div>
   </div>
 </template>
 

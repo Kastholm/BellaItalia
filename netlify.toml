@@ -4,6 +4,12 @@
   functions = "netlify/functions"
   publish = "dist"
 
+[[redirects]]
+from = "/*"
+to = "/404.html"
+status = 404
+
+
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.
   #[[redirects]]

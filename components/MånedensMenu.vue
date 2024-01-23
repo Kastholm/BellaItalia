@@ -22,7 +22,7 @@
       {{ menu.number }},-
     </div>
     <div
-          class=" md:hidden  mt-10 p-4 my-2 mb-10 bg-white max-w-[80vw] m-auto border-l-2 border-t-2 border-gray-200 shadow-lg"
+          class=" md:hidden  mt-10 p-4 my-2 mb-2 bg-white max-w-[80vw] m-auto border-l-2 border-t-2 border-gray-200 shadow-lg"
         >
           <h3 class="text-md font-semibold text-gray-700 mb-2">
            <b> Vedrørende Allergier</b> bedes i rette henvendelse til personalet eller pr.
@@ -35,8 +35,13 @@
             Vi tilbyder vegetariske retter i vores menukort ellers er det muligt
             at tilføje/fjerne ingredienser på diverse retter.
           </h3>
+        </div>
+        <div
+          class="p-4 mb-10 bg-white max-w-[80vw] m-auto border-l-2 border-t-2 border-gray-200 shadow-lg"
+        >
+          
           <h3 class="text-md font-semibold text-gray-700">
-            Vi modtager ikke bordreservationer pr. mail kun via tlf eller henvendelse i restauranten.
+            <b>Vi modtager ikke bordreservationer pr. mail </b> kun via tlf eller henvendelse i restauranten.
           </h3>
         </div>
   </div>

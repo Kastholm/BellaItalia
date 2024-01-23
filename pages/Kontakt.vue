@@ -85,9 +85,14 @@
                 <a class="hover:text-gray-900" :href="contactInfo.mail">{{
                   contactInfo.mail
                 }}</a>
+                
               </dd>
             </div>
+
+            
           </dl>
+
+          <p class="text-gray-700"> - <b>Vi modtager ikke bordreservationer pr. mail </b> kun via tlf eller henvendelse i restauranten.</p>
           <div class="blocks mt-6 leading-8 text-gray-600">
             <SanityBlocks
               :blocks="contactInfo.description"

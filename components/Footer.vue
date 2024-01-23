@@ -71,6 +71,7 @@
                 {{ data.kontaktinfo[0].phoneNumber }}
               </NuxtLink>
               <a class="hover:opacity-75"> {{ data.kontaktinfo[0].mail }} </a>
+              <p class="text-gray-600"> - <b>Vi modtager ikke bordreservationer pr. mail </b></p>
               <a class="hover:opacity-75">
                 {{ data.kontaktinfo[0].address }}
               </a>

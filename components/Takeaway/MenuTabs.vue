@@ -28,7 +28,7 @@
 
       <div class="stickyHeader sticky top-0">
       <div
-          class=" z-[999px]  hidden xl:inline-block lg:absolute -top-[15rem]  p-4 bg-white max-w-[30em] border-l-2 border-t-2 border-gray-200 shadow-lg"
+          class=" z-[999px]  hidden xl:inline-block lg:absolute -top-[17rem]  p-4 bg-white max-w-[30em] border-l-2 border-t-2 border-gray-200 shadow-lg"
         >
           <h3 class="text-md font-semibold text-gray-700 mb-2">
            <b> Vedrørende Allergier</b> bedes i rette henvendelse til personalet eller pr.
@@ -41,8 +41,12 @@
             Vi tilbyder vegetariske retter i vores menukort ellers er det muligt
             at tilføje/fjerne ingredienser på diverse retter.
           </h3>
-          <h3 class="text-md font-semibold text-gray-700">
-            Vi modtager ikke bordreservationer pr. mail kun via tlf eller henvendelse i restauranten.
+        </div>
+        <div
+          class=" z-[999px]  hidden xl:inline-block lg:absolute -top-[5.5rem]  p-4 bg-white max-w-[30em] border-l-2 border-t-2 border-gray-200 shadow-lg"
+        >
+        <h3 class="text-md font-semibold text-gray-700">
+            <b>Vi modtager ikke bordreservationer pr. mail </b> kun via tlf eller henvendelse i restauranten.
           </h3>
         </div>
         <div
@@ -145,7 +149,7 @@
       </div>
     </div>
     <div
-          class="   p-4 my-2 mb-10 bg-white max-w-[80vw] m-auto border-l-2 border-t-2 border-gray-200 shadow-lg"
+          class="   p-4 my-2 mb-2 bg-white max-w-[80vw] m-auto border-l-2 border-t-2 border-gray-200 shadow-lg"
         >
           <h3 class="text-md font-semibold text-gray-700 mb-2">
            <b> Vedrørende Allergier</b> bedes i rette henvendelse til personalet eller pr.
@@ -158,8 +162,13 @@
             Vi tilbyder vegetariske retter i vores menukort ellers er det muligt
             at tilføje/fjerne ingredienser på diverse retter.
           </h3>
+        </div>
+        <div
+          class="p-4 mb-10 bg-white max-w-[80vw] m-auto border-l-2 border-t-2 border-gray-200 shadow-lg"
+        >
+          
           <h3 class="text-md font-semibold text-gray-700">
-            Vi modtager ikke bordreservationer pr. mail kun via tlf eller henvendelse i restauranten.
+            <b>Vi modtager ikke bordreservationer pr. mail </b> kun via tlf eller henvendelse i restauranten.
           </h3>
         </div>
     <TakeawayHovedretterPizza />

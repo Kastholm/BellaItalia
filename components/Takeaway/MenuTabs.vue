@@ -41,6 +41,9 @@
             Vi tilbyder vegetariske retter i vores menukort ellers er det muligt
             at tilføje/fjerne ingredienser på diverse retter.
           </h3>
+          <h3 class="text-md font-semibold text-gray-700">
+            Vi modtager ikke bordreservationer pr. mail kun via tlf eller henvendelse i restauranten.
+          </h3>
         </div>
         <div
           class="tabs mb-12 flex justify-center rounded-t-md py-2 bg-[#093511]"
@@ -154,6 +157,9 @@
           <h3 class="text-md font-semibold text-gray-700">
             Vi tilbyder vegetariske retter i vores menukort ellers er det muligt
             at tilføje/fjerne ingredienser på diverse retter.
+          </h3>
+          <h3 class="text-md font-semibold text-gray-700">
+            Vi modtager ikke bordreservationer pr. mail kun via tlf eller henvendelse i restauranten.
           </h3>
         </div>
     <TakeawayHovedretterPizza />

@@ -37,7 +37,7 @@
           </h3>
         </div>
         <div
-          class="p-4 mb-10 bg-white max-w-[80vw] m-auto border-l-2 border-t-2 border-gray-200 shadow-lg"
+          class="p-4 mb-10 md:hidden bg-white max-w-[80vw] m-auto border-l-2 border-t-2 border-gray-200 shadow-lg"
         >
           
           <h3 class="text-md font-semibold text-gray-700">

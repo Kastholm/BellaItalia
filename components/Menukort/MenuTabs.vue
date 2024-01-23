@@ -29,7 +29,7 @@
           </h3>
         </div>
         <div
-          class="tabs mb-12 flex justify-center rounded-t-md py-2 bg-[#093511]"
+          class="tabs  mb-12 flex justify-center rounded-t-md py-2 bg-[#093511]"
         >
           <NuxtLink to="#topHeader">
             <button

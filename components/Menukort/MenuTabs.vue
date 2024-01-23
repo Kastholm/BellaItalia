@@ -11,7 +11,7 @@
           </h2>
       <div class="stickyHeader sticky top-0">
 <div
-          class=" z-[999px]  hidden xl:inline-block lg:absolute -top-48  p-4 bg-white max-w-[30em] border-l-2 border-t-2 border-gray-200 shadow-lg"
+          class=" z-[999px]  hidden xl:inline-block lg:absolute -top-[15rem]   p-4 bg-white max-w-[30em] border-l-2 border-t-2 border-gray-200 shadow-lg"
         >
           <h3 class="text-md font-semibold text-gray-700 mb-2">
            <b> Vedrørende Allergier</b> bedes i rette henvendelse til personalet eller pr.

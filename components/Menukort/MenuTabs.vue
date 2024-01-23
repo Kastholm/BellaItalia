@@ -20,7 +20,7 @@
           <h3 class="text-md font-semibold text-gray-700 mb-2">
             Vi tilbyder desværre ikke glutenfri pizza og pasta.
           </h3>
-          <h3 class="text-md font-semibold text-gray-700">
+          <h3 class="text-md font-semibold text-gray-700 mb-2">
             Vi tilbyder vegetariske retter i vores menukort ellers er det muligt
             at tilføje/fjerne ingredienser på diverse retter.
           </h3>

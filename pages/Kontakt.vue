@@ -68,7 +68,7 @@
               <dd>
                 <NuxtLink
                   class="hover:text-gray-900"
-                  to="tel:+1 (555) 234-5678"
+                  to="tel:+45 75 50 58 07"
                   >{{ contactInfo.phoneNumber }}</NuxtLink
                 >
               </dd>

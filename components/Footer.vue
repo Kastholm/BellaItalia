@@ -67,9 +67,9 @@
               v-if="data"
               class="flex flex-col mt-4 space-y-2 text-sm text-gray-500"
             >
-              <a class="hover:opacity-75">
+              <NuxtLink to="tel:+45 75 50 58 07" class="hover:opacity-75">
                 {{ data.kontaktinfo[0].phoneNumber }}
-              </a>
+              </NuxtLink>
               <a class="hover:opacity-75"> {{ data.kontaktinfo[0].mail }} </a>
               <a class="hover:opacity-75">
                 {{ data.kontaktinfo[0].address }}

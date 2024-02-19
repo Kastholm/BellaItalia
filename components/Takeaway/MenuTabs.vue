@@ -141,7 +141,7 @@
       class="text-center"
     >
       <div class="mb-8">
-        <p class="text-xl mb-2"><b>Pizza og Pasta til kun 80,- kr.</b></p>
+        <p class="text-xl mb-2"><b>Pizza og Pasta til kun 85,- kr.</b></p>
         <p class="text-xl mb-4">Med undtagelse af</p>
         <p class="text-xl mb-4"><b>Pizza</b> 38, 46, 67, 69, 42</p>
         <p class="text-xl mb-4"><b>Pasta</b> 37, 24, 26, 40, 38, 39</p>

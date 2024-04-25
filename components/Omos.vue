@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="w-full grid place-content-center mb-12">
-      <NuxtLink to="https://www.findsmiley.dk/23498">
+      <NuxtLink to="https://www.findsmiley.dk/1416010">
         <img class="w-20 m-auto mb-6" :src="'/img/mainSmiley.png'" alt="" />
         <BaseButton class="w-fit px-6 scale-90"> Se Smiley Ordning </BaseButton>
       </NuxtLink>

@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 min-h-[700px] gap-8 mx-auto">
-    <div class="m-auto" v-for="menu in data" :key="menu._id">
+    <div class="mx-auto" v-for="menu in data" :key="menu._id">
       <div class="text-center mb-10 mt-32 md:mt-44">
         <h2 class="text-4xl font-bold uppercase text-gray-800 font-header after">
           {{ menu.title }}

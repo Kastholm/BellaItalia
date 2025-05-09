@@ -11,16 +11,19 @@
         Take Away
       </h2>
     
-    <div
+     <div
       
       class="text-center"
     >
       <div class="mb-8">
-        <p class="text-xl mb-2"><b>Pizza og Pasta til kun 85,- kr.</b></p>
-        <p class="text-xl mb-4">Med undtagelse af</p>
-        <p class="text-xl mb-4"><b>Pizza</b> 38, 46, 67, 69, 42</p>
-        <p class="text-xl mb-4"><b>Pasta</b> 37, 24, 26, 40, 38, 39</p>
-        <p class="text-xl mb-4 ">Alle andre retter har <br> samme pris som menukortet.</p>
+        <p class="text-xl mb-2"><b>Åbningstider:</b></p>
+        <p class="text-xl mb-2">Mandag 12-14 og 17-22</p>
+        <p class="text-xl mb-2">Tirsdag <b> LUKKET </b></p>
+        <p class="text-xl mb-2">Onsdag 12-14 og 17-22</p>
+        <p class="text-xl mb-2">Torsdag 12-14 og 17-22</p>
+        <p class="text-xl mb-2">Fredag 12-14 og 17-22</p>
+        <p class="text-xl mb-2">Lørdag 12-14 og 17-22</p>
+        <p class="text-xl mb-2">Søndag 17-22</p>
       </div>
     </div>
     

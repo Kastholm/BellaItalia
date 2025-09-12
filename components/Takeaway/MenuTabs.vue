@@ -138,7 +138,7 @@
       >
         Take Away
       </h2>
-    
+    <!--
     <div
       
       class="text-center"
@@ -151,6 +151,7 @@
         <p class="text-xl mb-4 ">Alle andre retter har samme pris som menukortet.</p>
       </div>
     </div>
+    -->
     <div
           class="   p-4 my-2 mb-2 bg-white max-w-[80vw] m-auto border-l-2 border-t-2 border-gray-200 shadow-lg"
         >

@@ -17,12 +17,7 @@
     >
       <div class="mb-8">
         <p class="text-xl mb-2"><b>Åbningstider:</b></p>
-        <p class="text-xl mb-2">Mandag 12-14 og 17-22</p>
-        <p class="text-xl mb-2">Tirsdag <b> LUKKET </b></p>
-        <p class="text-xl mb-2">Onsdag 12-14 og 17-22</p>
-        <p class="text-xl mb-2">Torsdag 12-14 og 17-22</p>
-        <p class="text-xl mb-2">Fredag 12-14 og 17-22</p>
-        <p class="text-xl mb-2">Lørdag 12-14 og 17-22</p>
+        <p class="text-xl mb-2">Mandag-Lørdag 12-14 og 17-22</p>
         <p class="text-xl mb-2">Søndag 17-22</p>
       </div>
     </div>
